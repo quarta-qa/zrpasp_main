@@ -1,0 +1,1521 @@
+{
+    "employee": [
+        {
+            "lastName": "Артюшин",
+            "firstName": "Игорь",
+            "middleName": "Борисович",
+            "gender": "Мужской",
+            "birthday": "20.09.1973",
+            "documents": {
+                "documentType": "Паспорт РФ",
+                "serialFirst": "45",
+                "serialSecond": "06",
+                "serialThird": "958471",
+                "departmentCode": "",
+                "issueDate": "01.03.2004",
+                "issuedBy": "ОВД Бутырского р-на г. Москвы"
+            },
+            "addresses": {
+                "index": "127322",
+                "region": "",
+                "area": "",
+                "areaType": "",
+                "city": "Москва",
+                "cityType": "город",
+                "locality": "",
+                "localityType": "",
+                "street": "Милашенкова",
+                "streetType": "улица",
+                "building": "20",
+                "block": "",
+                "apartment": "6",
+                "use": false,
+                "actualAddress": "127322, Москва, ул. Милашенкова, д.20, кв.6"
+            },
+            "pfr": {
+                "registrationNumber": "11524165116",
+                "category": "Наемный работник",
+                "localityType": "",
+                "retirementDate": "",
+                "esn": false,
+                "lastName": "",
+                "firstName": "",
+                "middleName": "",
+                "nationality": "РОССИЯ",
+                "exclude": false,
+                "country": "Россия",
+                "region": "Оренбургская область",
+                "area": "",
+                "city": "Оренбург"
+            },
+            "fns": {
+                "itn": "771507297065",
+                "exclude": false,
+                "resident": false,
+                "nationality": "РОССИЯ"
+            },
+            "fullNameHistory": {
+
+            },
+            "other": {
+                "requisites": "",
+                "phoneNumber": "8-495-789-89-96",
+                "email": "ArtushinIB@bk.ru",
+                "crimea": false
+            },
+            "personalAccount": {
+                "accountInfo": {
+                  "personnelNumber": "",
+                  "receiptDate": "05.=.=",
+                  "orderNumber": "200-к",
+                  "salaryAmount": "6222.00",
+                  "workingHours": "",
+                  "changeDate": "",
+                  "paymentCategory": "",
+                  "employeeCategoryBy": "Штатн.сотрудн(гражд)",
+                  "timeCategory": "Дни",
+                  "statusOn": "",
+                  "statusOff": "",
+                  "ets": "",
+                  "subdivision": "Отдел экономического мониторинга",
+                  "position": "Старший специалист 1 разряда",
+                  "experience": "",
+                  "lastPayroll": "",
+                  "dismissalDate": "",
+                  "fired": false,
+                  "dismissalNumber": "",
+                  "employeeCategory": "",
+                  "classRank": "",
+                  "unionMember": false,
+                  "memberFrom": "",
+                  "memberTo": "",
+                  "employeeNumber": ""
+                },
+                "calcInfo": {
+                  "holidayPayment": "По календарн.",
+                  "holidayPeriodFrom": "",
+                  "holidayPeriodTo": "",
+                  "note": "",
+                  "sickDaysPercent": "100%",
+                  "averageDailyEarnings": "",
+                  "privilegesType": "(1) 400",
+                  "coefficient": "",
+                  "stateEmployee": false,
+                  "mainWork": false,
+                  "resident": false,
+                  "pluralist": false,
+                  "chaesMember": false,
+                  "chaesNumber": "",
+                  "salaryWithoutRounding": true,
+                  "incomeTax": true,
+                  "prepaidExpense": true,
+                  "region": "",
+                  "alimony": "",
+                  "stbCard": true,
+                  "paymentMethod": "Банк",
+                  "cardNumber": "4390560002630260",
+                  "fullName": "",
+                  "validity": "08.+1",
+                  "bankList": "",
+                  "key": ""
+                },
+                "employeePrivileges": {
+                  "dateStart": "05.=.=",
+                  "dateEnd": "",
+                  "childPrivilege": true,
+                  "renouncement": false,
+                  "childNumber": "1",
+                  "statementNumber": "5",
+                  "singleParent": false,
+                  "birthday": "15.05.2003",
+                  "statementDate": "05.=.=",
+                  "disabled": false,
+                  "taxDeduction": false,
+                  "tutor": false,
+                  "professionalDeduction": false,
+                  "socialDeduction": false,
+                  "note": "",
+                  "privilegesAmount": "0",
+                  "deductionCode": "",
+                  "deductionSum": "",
+                  "imns": "",
+                  "notificationNumber": "",
+                  "notificationDate": ""
+                },
+                "tariffSalary": "Должностной оклад*"
+            },
+            "payrolls": [
+                {
+                    "lastMonth": false,
+                    "payroll": "27",
+                    "order": "200-к",
+                    "date": "05.=.=",
+                    "dateFrom": "05.=.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["15", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": false,
+                    "payroll": "77",
+                    "order": "200-к",
+                    "date": "05.=.=",
+                    "dateFrom": "05.=.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["", "1580", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                  },
+                {
+                    "lastMonth": false,
+                    "payroll": "4",
+                    "order": "200-к",
+                    "date": "05.=.=",
+                    "dateFrom": "05.=.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["40", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                  },
+                {
+                    "lastMonth": false,
+                    "payroll": "11",
+                    "order": "200-к",
+                    "date": "05.=.=",
+                    "dateFrom": "05.=.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["5", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                  }
+            ],
+            "withholdings": [
+                {
+                    "lastMonth": false,
+                    "withholding": "1",
+                    "order": "170-к",
+                    "withholdingSum": "",
+                    "validity": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "quantifyBan": false,
+                    "recalculation": false,
+                    "parameters": ["", "", "", "", "", "", "", "", ""],
+                    "paymentAccruals": "",
+                    "executiveSheet": ""
+                }
+            ],
+            "incomeTaxes": {
+                "date": "0816",
+                "taxSum": "3432",
+                "incomes": [
+                    {
+                        "sum": "32000",
+                        "type": "2000"
+                    }
+                ],
+                "deductions": [
+                    {
+                        "sum": "5600",
+                        "type": "1000/1400 На первого ребенка",
+                        "childsAmount": "0"
+                    }
+                ]
+            },
+            "referencePreviousPlace": [
+                {
+                    "issueDate": "28.09.2016",
+                    "referenceNumber": "1296",
+                    "insurer": "Росстрахнадзор",
+                    "periods": [
+                        {
+                            "periodFrom": "01.01.2014",
+                            "periodTo": "31.12.2014",
+                            "include": true
+                        },
+                        {
+                            "periodFrom": "01.01.2015",
+                            "periodTo": "31.12.2015",
+                            "include": true
+                        },
+                        {
+                            "periodFrom": "01.01.2016",
+                            "periodTo": "31.12.2016",
+                            "include": true
+                        }
+                    ],
+                    "salary": [
+                        {
+                            "year": "2014",
+                            "sum": "350000",
+                            "include": true
+                        },
+                        {
+                            "year": "2015",
+                            "sum": "375000",
+                            "include": true
+                        },
+                        {
+                            "year": "2016",
+                            "sum": "28568",
+                            "include": true
+                        }
+                    ],
+                    "days": [
+                        {
+                            "year": "2015",
+                            "periodFrom": "15.10.2015",
+                            "periodTo": "17.10.2015",
+                            "amount": "3",
+                            "name": "1-б/л.",
+                            "include": true
+                        },
+                      {
+                            "year": "2015",
+                            "periodFrom": "22.12.2015",
+                            "periodTo": "26.12.2015",
+                            "amount": "5",
+                            "name": "1-б/л.",
+                            "include": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "lastName": "Коновалов",
+            "firstName": "Виктор",
+            "middleName": "Иванович",
+            "gender": "Мужской",
+            "birthday": "17.05.1949",
+            "documents": {
+                "documentType": "Паспорт РФ",
+                "serialFirst": "45",
+                "serialSecond": "04",
+                "serialThird": "214708",
+                "departmentCode": "",
+                "issueDate": "20.07.2004",
+                "issuedBy": "ОВД Басманного р-на г. Москвы"
+            },
+            "addresses": {
+                "index": "127322",
+                "region": "",
+                "area": "",
+                "areaType": "",
+                "city": "Москва",
+                "cityType": "город",
+                "locality": "",
+                "localityType": "",
+                "street": "Малый Харьетоньевский",
+                "streetType": "переулок",
+                "building": "3",
+                "block": "",
+                "apartment": "10",
+                "use": false,
+                "actualAddress": "127322, Москва, Малый Харьетоньевский пер., д.3, кв.10"
+            },
+            "pfr": {
+                "registrationNumber": "11524165116",
+                "category": "Наемный работник",
+                "localityType": "",
+                "retirementDate": "",
+                "esn": false,
+                "lastName": "",
+                "firstName": "",
+                "middleName": "",
+                "nationality": "РОССИЯ",
+                "exclude": false,
+                "country": "Россия",
+                "region": "Смоленская область",
+                "area": "",
+                "city": "Смоленск"
+            },
+            "fns": {
+                "itn": "772479042071",
+                "exclude": false,
+                "resident": false,
+                "nationality": "РОССИЯ"
+            },
+            "fullNameHistory": {
+
+            },
+            "other": {
+                "requisites": "",
+                "phoneNumber": "8-495-158-78-96",
+                "email": "KonovalovVI@bk.ru",
+                "crimea": false
+            },
+            "personalAccount": {
+                "accountInfo": {
+                  "personnelNumber": "",
+                  "receiptDate": "26.-1.=",
+                  "orderNumber": "170-к",
+                  "salaryAmount": "5381.00",
+                  "workingHours": "",
+                  "changeDate": "",
+                  "paymentCategory": "",
+                  "employeeCategoryBy": "Штатн.сотрудн(гражд)",
+                  "timeCategory": "Дни",
+                  "statusOn": "",
+                  "statusOff": "",
+                  "ets": "",
+                  "subdivision": "Инспекция сводного контроля",
+                  "position": "Главный специалист-эксперт",
+                  "experience": "",
+                  "lastPayroll": "",
+                  "dismissalDate": "",
+                  "fired": false,
+                  "dismissalNumber": "",
+                  "employeeCategory": "Руководитель",
+                  "classRank": "",
+                  "unionMember": false,
+                  "memberFrom": "",
+                  "memberTo": "",
+                  "employeeNumber": ""
+                },
+                "calcInfo": {
+                  "holidayPayment": "По календарн.",
+                  "holidayPeriodFrom": "",
+                  "holidayPeriodTo": "",
+                  "note": "",
+                  "sickDaysPercent": "60%",
+                  "averageDailyEarnings": "",
+                  "privilegesType": "(2) 500",
+                  "coefficient": "",
+                  "stateEmployee": false,
+                  "mainWork": false,
+                  "resident": false,
+                  "pluralist": false,
+                  "chaesMember": false,
+                  "chaesNumber": "",
+                  "salaryWithoutRounding": true,
+                  "incomeTax": true,
+                  "prepaidExpense": true,
+                  "region": "",
+                  "alimony": "",
+                  "stbCard": true,
+                  "paymentMethod": "Платежная ведомость",
+                  "cardNumber": "",
+                  "fullName": "",
+                  "validity": "",
+                  "bankList": "",
+                  "key": ""
+                },
+                "employeePrivileges": {
+                  "dateStart": "26.-1.=",
+                  "dateEnd": "",
+                  "childPrivilege": false,
+                  "renouncement": false,
+                  "childNumber": "",
+                  "statementNumber": "",
+                  "singleParent": false,
+                  "birthday": "",
+                  "statementDate": "",
+                  "disabled": false,
+                  "taxDeduction": false,
+                  "tutor": false,
+                  "professionalDeduction": false,
+                  "socialDeduction": false,
+                  "note": "",
+                  "privilegesAmount": "1",
+                  "deductionCode": "",
+                  "deductionSum": "",
+                  "imns": "",
+                  "notificationNumber": "",
+                  "notificationDate": ""
+                },
+                "tariffSalary": "Должностной оклад*"
+            },
+            "payrolls": [
+                {
+                    "lastMonth": false,
+                    "payroll": "1",
+                    "order": "170-к",
+                    "date": "26.-1.=",
+                    "dateFrom": "26.-1.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["", "", "5381.00", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": false,
+                    "payroll": "27",
+                    "order": "170-к",
+                    "date": "26.-1.=",
+                    "dateFrom": "26.-1.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["15", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": false,
+                    "payroll": "77",
+                    "order": "170-к",
+                    "date": "26.-1.=",
+                    "dateFrom": "26.-1.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["", "1053", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": false,
+                    "payroll": "4",
+                    "order": "170-к",
+                    "date": "26.-1.=",
+                    "dateFrom": "26.-1.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["20", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": false,
+                    "payroll": "11",
+                    "order": "170-к",
+                    "date": "26.-1.=",
+                    "dateFrom": "26.-1.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["5", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": true,
+                    "payroll": "27",
+                    "order": "170-к",
+                    "date": "26.-1.=",
+                    "dateFrom": "26.-1.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["15", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": true,
+                    "payroll": "77",
+                    "order": "170-к",
+                    "date": "26.-1.=",
+                    "dateFrom": "26.-1.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["", "1053", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": true,
+                    "payroll": "4",
+                    "order": "170-к",
+                    "date": "26.-1.=",
+                    "dateFrom": "26.-1.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["20", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": true,
+                    "payroll": "11",
+                    "order": "170-к",
+                    "date": "26.-1.=",
+                    "dateFrom": "26.-1.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["5", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                }
+            ],
+            "withholdings": [
+                {
+                    "lastMonth": false,
+                    "withholding": "1",
+                    "order": "170-к",
+                    "withholdingSum": "",
+                    "validity": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "quantifyBan": false,
+                    "recalculation": false,
+                    "parameters": ["", "", "", "", "", "", "", "", ""],
+                    "paymentAccruals": "",
+                    "executiveSheet": ""
+                }
+            ],
+            "incomeTaxes": {
+                "date": "0716",
+                "taxSum": "3705",
+                "incomes": [
+                    {
+                        "sum": "30000",
+                        "type": "2000"
+                    }
+                ],
+                "deductions": [
+                    {
+                        "sum": "1500",
+                        "type": "500 руб. на налогоплательщика, пп. 2 п.1 ст.218 НК",
+                        "childsAmount": "0"
+                    }
+                ]
+            },
+            "referencePreviousPlace": [
+                {
+                    "issueDate": "15.04.2016",
+                    "referenceNumber": "1297",
+                    "insurer": "ООО «Рассвет»",
+                    "periods": [
+                        {
+                            "periodFrom": "15.01.2015",
+                            "periodTo": "31.12.2015",
+                            "include": true
+                        },
+                        {
+                            "periodFrom": "01.01.2016",
+                            "periodTo": "15.04.2016",
+                            "include": true
+                        }
+                    ],
+                    "salary": [
+                        {
+                            "year": "2015",
+                            "sum": "295000",
+                            "include": true
+                        },
+                        {
+                            "year": "2016",
+                            "sum": "26295",
+                            "include": true
+                        }
+                    ],
+                    "days": [
+                        {
+                            "year": "2015",
+                            "periodFrom": "15.10.2015",
+                            "periodTo": "17.10.2015",
+                            "amount": "3",
+                            "name": "1-б/л.",
+                            "include": true
+                        }
+                    ]
+                }
+            ],
+            "memberStatements": [
+                {
+                    "fullName": "Коновалова Виктора Ивановича",
+                    "periodFrom": "01.01.20104",
+                    "periodTo": "27.12.2014",
+                    "insurer": "ООО «Диана»",
+                    "reason": "Ликвидация организации",
+                    "payment": "1 - по временной нетрудоспособности",
+                    "statementDate": "16.=.="
+                }
+            ],
+            "pfRequests": [
+                {
+                    "unit": "Главное Управление ПФР № 10 по Москве и Московской области",
+                    "additional": "",
+                    "fullName": "Коновалова Виктора Ивановича",
+                    "yearFirst": "2014",
+                    "yearSecond": "0",
+                    "yearThird": "0",
+                    "insurer": "ООО «Диана»",
+                    "reason": "Ликвидация организации",
+                    "payment": "1 - по временной нетрудоспособности",
+                    "requestDate": "16.=.=",
+                    "requestNumber": "724",
+                    "manager": ""
+                }
+            ],
+            "fssRequests": [
+                {
+                    "unit": "Филиал № 6 ГУ Отделения ФСС РФ г. Москвы",
+                    "fullName": "Коновалову Виктору Ивановичу",
+                    "type": "1 - по временной нетрудоспособности",
+                    "firstEmployer": "ООО «Рассвет»",
+                    "firstItn": "77044589654",
+                    "firstUnit": "Филиал № 2 ГУ Отделения ФСС РФ г. Москвы",
+                    "firstKpp": "770401001",
+                    "firstRegistrationNumber": "45789525855222",
+                    "firstAdditionalCode": "",
+                    "firstCode": "",
+                    "firstPeriodFrom": "15.01.2015",
+                    "firstPeriodTo": "15.04.2016",
+                    "secondEmployer": "",
+                    "secondItn": "",
+                    "secondUnit": "",
+                    "secondKpp": "",
+                    "secondRegistrationNumber": "",
+                    "secondAdditionalCode": "",
+                    "secondCode": "",
+                    "secondPeriodFrom": "",
+                    "secondPeriodTo": "",
+                    "thirdEmployer": "",
+                    "thirdItn": "",
+                    "thirdUnit": "",
+                    "thirdKpp": "",
+                    "thirdRegistrationNumber": "",
+                    "thirdAdditionalCode": "",
+                    "thirdCode": "",
+                    "thirdPeriodFrom": "",
+                    "thirdPeriodTo": "",
+                    "requestDate": "16.=.="
+                }
+            ]
+        },
+        {
+            "lastName": "Зотова",
+            "firstName": "Ирина",
+            "middleName": "Викторовна",
+            "gender": "Женский",
+            "birthday": "10.08.1993",
+            "documents": {
+                "documentType": "Паспорт РФ",
+                "serialFirst": "45",
+                "serialSecond": "02",
+                "serialThird": "443255",
+                "departmentCode": "",
+                "issueDate": "20.03.2004",
+                "issuedBy": "ОВД Крылатского р-на г. Москвы"
+            },
+            "addresses": {
+                "index": "127322",
+                "region": "",
+                "area": "",
+                "areaType": "",
+                "city": "Москва",
+                "cityType": "город",
+                "locality": "",
+                "localityType": "",
+                "street": "Осенний",
+                "streetType": "бульвар",
+                "building": "16",
+                "block": "",
+                "apartment": "25",
+                "use": false,
+                "actualAddress": "127322, Москва, Осенний б-р, д.16, кв.25"
+            },
+            "pfr": {
+                "registrationNumber": "15249003946",
+                "category": "Наемный работник",
+                "localityType": "",
+                "retirementDate": "",
+                "esn": false,
+                "lastName": "",
+                "firstName": "",
+                "middleName": "",
+                "nationality": "РОССИЯ",
+                "exclude": false,
+                "country": "Россия",
+                "region": "Тульская область",
+                "area": "",
+                "city": "Тула"
+            },
+            "fns": {
+                "itn": "773127473631",
+                "exclude": false,
+                "resident": false,
+                "nationality": "РОССИЯ"
+            },
+            "fullNameHistory": {
+
+            },
+            "other": {
+                "requisites": "",
+                "phoneNumber": "8-495-145-32-45",
+                "email": "ZotovaIV@bk.ru",
+                "crimea": false
+            },
+            "personalAccount": {
+                "accountInfo": {
+                    "personnelNumber": "",
+                    "receiptDate": "16.=.=",
+                    "orderNumber": "197-к",
+                    "salaryAmount": "4372.00",
+                    "workingHours": "",
+                    "changeDate": "",
+                    "paymentCategory": "",
+                    "employeeCategoryBy": "Штатн.сотрудн(гражд)",
+                    "timeCategory": "Дни",
+                    "statusOn": "",
+                    "statusOff": "",
+                    "ets": "",
+                    "subdivision": "Отдел экономического мониторинга",
+                    "position": "Старший специалист 1 разряда",
+                    "experience": "",
+                    "lastPayroll": "",
+                    "dismissalDate": "",
+                    "fired": false,
+                    "dismissalNumber": "",
+                    "employeeCategory": "ИТР",
+                    "classRank": "",
+                    "unionMember": false,
+                    "memberFrom": "",
+                    "memberTo": "",
+                    "employeeNumber": ""
+                },
+                "calcInfo": {
+                    "holidayPayment": "По календарн.",
+                    "holidayPeriodFrom": "",
+                    "holidayPeriodTo": "",
+                    "note": "",
+                    "sickDaysPercent": "100%",
+                    "averageDailyEarnings": "",
+                    "privilegesType": "(1) 400",
+                    "coefficient": "",
+                    "stateEmployee": false,
+                    "mainWork": false,
+                    "resident": false,
+                    "pluralist": false,
+                    "chaesMember": false,
+                    "chaesNumber": "",
+                    "salaryWithoutRounding": true,
+                    "incomeTax": true,
+                    "prepaidExpense": true,
+                    "region": "",
+                    "alimony": "",
+                    "stbCard": true,
+                    "paymentMethod": "Банк",
+                    "cardNumber": "4390580002630567",
+                    "fullName": "",
+                    "validity": "08.+1",
+                    "bankList": "",
+                    "key": ""
+                },
+                "employeePrivileges": {
+                    "dateStart": "16.=.=",
+                    "dateEnd": "",
+                    "childPrivilege": true,
+                    "renouncement": true,
+                    "childNumber": "1",
+                    "statementNumber": "6",
+                    "singleParent": false,
+                    "birthday": "15.03.2016",
+                    "statementDate": "16.=.=",
+                    "disabled": false,
+                    "taxDeduction": false,
+                    "tutor": false,
+                    "professionalDeduction": false,
+                    "socialDeduction": false,
+                    "note": "",
+                    "privilegesAmount": "0",
+                    "deductionCode": "",
+                    "deductionSum": "",
+                    "imns": "",
+                    "notificationNumber": "",
+                    "notificationDate": ""
+                },
+                "tariffSalary": "Должностной оклад*"
+            },
+            "payrolls": [
+                {
+                    "lastMonth": false,
+                    "payroll": "27",
+                    "order": "197-к",
+                    "date": "16.=.=",
+                    "dateFrom": "16.=.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["15", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": false,
+                    "payroll": "77",
+                    "order": "197-к",
+                    "date": "16.=.=",
+                    "dateFrom": "16.=.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["", "1580", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": false,
+                    "payroll": "4",
+                    "order": "197-к",
+                    "date": "16.=.=",
+                    "dateFrom": "16.=.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["30", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": false,
+                    "payroll": "11",
+                    "order": "197-к",
+                    "date": "16.=.=",
+                    "dateFrom": "16.=.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["5", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                }
+            ],
+            "withholdings": [
+                {
+                    "lastMonth": false,
+                    "withholding": "1",
+                    "order": "170-к",
+                    "withholdingSum": "",
+                    "validity": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "quantifyBan": false,
+                    "recalculation": false,
+                    "parameters": ["", "", "", "", "", "", "", "", ""],
+                    "paymentAccruals": "",
+                    "executiveSheet": ""
+                }
+            ],
+            "incomeTaxes": {
+                "date": "0616",
+                "taxSum": "1274",
+                "incomes": [
+                    {
+                        "sum": "20000",
+                        "type": "2000"
+                    },
+                    {
+                        "sum": "5000",
+                        "type": "2760"
+                    },
+                    {
+                        "sum": "30000",
+                        "type": "2762"
+                    }
+                ],
+                "deductions": [
+                    {
+                        "sum": "11200",
+                        "type": "122",
+                        "childsAmount": "0"
+                    },
+                    {
+                        "sum": "400",
+                        "type": "503",
+                        "childsAmount": "0"
+                    },
+                                      {
+                        "sum": "30000",
+                        "type": "508",
+                        "childsAmount": "1"
+                    }
+                ]
+            },
+            "referencePreviousPlace": [
+                {
+                    "issueDate": "28.04.2016",
+                    "referenceNumber": "1295",
+                    "insurer": "Федеральное государственное бюджетное учреждение «Главный центр связи и спутниковых систем»",
+                    "periods": [
+                        {
+                            "periodFrom": "01.01.2015",
+                            "periodTo": "31.12.2015",
+                            "include": true
+                        },
+                        {
+                            "periodFrom": "01.01.2016",
+                            "periodTo": "28.04.2016",
+                            "include": true
+                        }
+                    ],
+                    "salary": [
+                        {
+                            "year": "2015",
+                            "sum": "286000",
+                            "include": true
+                        },
+                        {
+                            "year": "2016",
+                            "sum": "53726",
+                            "include": true
+                        }
+                    ],
+                    "days": [
+                        {
+                            "year": "2015",
+                            "periodFrom": "15.10.2015",
+                            "periodTo": "17.10.2015",
+                            "amount": "3",
+                            "name": "1-б/л.",
+                            "include": true
+                        },
+                        {
+                            "year": "2015",
+                            "periodFrom": "01.11.2015",
+                            "periodTo": "31.12.2015",
+                            "amount": "61",
+                            "name": "2-б/л бер. и род.",
+                            "include": true
+                        },
+                        {
+                            "year": "2016",
+                            "periodFrom": "01.01.2016",
+                            "periodTo": "31.01.2016",
+                            "amount": "30",
+                            "name": "2-б/л бер. и род.",
+                            "include": true
+                        }
+                    ]
+                },
+                {
+                    "issueDate": "30.12.2014",
+                    "referenceNumber": "195",
+                    "insurer": "ООО «Опал»",
+                    "periods": [
+                        {
+                            "periodFrom": "01.01.2014",
+                            "periodTo": "31.12.2014",
+                            "include": true
+                        }
+                    ],
+                    "salary": [
+                        {
+                            "year": "2014",
+                            "sum": "250000",
+                            "include": true
+                        }
+                    ],
+                    "days": [
+                        {
+                            "year": "2014",
+                            "periodFrom": "15.10.2014",
+                            "periodTo": "16.10.2014",
+                            "amount": "2",
+                            "name": "1-б/л.",
+                            "include": true
+                        }
+                    ]
+                }
+            ],
+            "ftn": [
+                {
+                    "base": "21000",
+                    "discount": "34000",
+                    "privilege": "0",
+                    "materialAssistance": "30000",
+                    "amount": "1"
+                }
+            ],
+            "fstn": [
+                {
+                    "fund": "Соц. страх 2.9%",
+                    "base": "55000",
+                    "disabledBase": "0",
+                    "discount": "34000",
+                    "deductions": "609",
+                    "disabledDeductions": "0",
+                    "materialAssistance": "30000",
+                    "amount": "1"
+                },
+                {
+                    "fund": "Фонд ОМС 5.1%",
+                    "base": "55000",
+                    "disabledBase": "0",
+                    "discount": "34000",
+                    "deductions": "1071",
+                    "disabledDeductions": "0",
+                    "materialAssistance": "30000",
+                    "amount": "1"
+                },
+                {
+                    "fund": "ПФ (страховая часть)",
+                    "base": "55000",
+                    "disabledBase": "0",
+                    "discount": "34000",
+                    "deductions": "4620",
+                    "disabledDeductions": "0",
+                    "materialAssistance": "30000",
+                    "amount": "1"
+                }
+            ]
+        },
+        {
+            "lastName": "Парамонова",
+            "firstName": "Елена",
+            "middleName": "Андреевна",
+            "gender": "Женский",
+            "birthday": "10.08.1959",
+            "documents": {
+                "documentType": "Паспорт РФ",
+                "serialFirst": "45",
+                "serialSecond": "05",
+                "serialThird": "368437",
+                "departmentCode": "",
+                "issueDate": "05.07.2000",
+                "issuedBy": "ОВД Измайловского р-на г. Москвы"
+            },
+            "addresses": {
+                "index": "127322",
+                "region": "",
+                "area": "",
+                "areaType": "",
+                "city": "Москва",
+                "cityType": "город",
+                "locality": "",
+                "localityType": "",
+                "street": "Щелковское",
+                "streetType": "шоссе",
+                "building": "12",
+                "block": "2",
+                "apartment": "115",
+                "use": false,
+                "actualAddress": "127322, Москва, Щелковское ш., д.12, корп. 2, кв.115"
+            },
+            "pfr": {
+                "registrationNumber": "01538734752",
+                "category": "Наемный работник (инвалид)",
+                "localityType": "",
+                "retirementDate": "",
+                "esn": false,
+                "lastName": "",
+                "firstName": "",
+                "middleName": "",
+                "nationality": "РОССИЯ",
+                "exclude": false,
+                "country": "Россия",
+                "region": "Саратовская область",
+                "area": "",
+                "city": "Саратов"
+            },
+            "fns": {
+                "itn": "771916152180",
+                "exclude": false,
+                "resident": false,
+                "nationality": "РОССИЯ"
+            },
+            "fullNameHistory": {
+
+            },
+            "other": {
+                "requisites": "",
+                "phoneNumber": "8-495-113-89-45",
+                "email": "ParamonovaEA@bk.ru",
+                "crimea": false
+            },
+            "personalAccount": {
+                "accountInfo": {
+                    "personnelNumber": "",
+                    "receiptDate": "25.=.=",
+                    "orderNumber": "210-к",
+                    "salaryAmount": "6052.00",
+                    "workingHours": "",
+                    "changeDate": "",
+                    "paymentCategory": "",
+                    "employeeCategoryBy": "Штатн.сотрудн(гражд)",
+                    "timeCategory": "Дни",
+                    "statusOn": "",
+                    "statusOff": "",
+                    "ets": "",
+                    "subdivision": "Финансовое управление",
+                    "position": "Заместитель начальника отдела",
+                    "experience": "",
+                    "lastPayroll": "",
+                    "dismissalDate": "",
+                    "fired": false,
+                    "dismissalNumber": "",
+                    "employeeCategory": "Руководитель",
+                    "classRank": "",
+                    "unionMember": false,
+                    "memberFrom": "",
+                    "memberTo": "",
+                    "employeeNumber": ""
+                },
+                "calcInfo": {
+                    "holidayPayment": "По календарн.",
+                    "holidayPeriodFrom": "",
+                    "holidayPeriodTo": "",
+                    "note": "",
+                    "sickDaysPercent": "100%",
+                    "averageDailyEarnings": "",
+                    "privilegesType": "(3) 3000",
+                    "coefficient": "",
+                    "stateEmployee": false,
+                    "mainWork": false,
+                    "resident": false,
+                    "pluralist": false,
+                    "chaesMember": true,
+                    "chaesNumber": "145",
+                    "salaryWithoutRounding": true,
+                    "incomeTax": true,
+                    "prepaidExpense": true,
+                    "region": "",
+                    "alimony": "",
+                    "stbCard": true,
+                    "paymentMethod": "Банк",
+                    "cardNumber": "4391680002330515",
+                    "fullName": "",
+                    "validity": "08.+1",
+                    "bankList": "",
+                    "key": ""
+                },
+                "employeePrivileges": {
+                    "dateStart": "25.=.=",
+                    "dateEnd": "",
+                    "childPrivilege": true,
+                    "renouncement": false,
+                    "childNumber": "3",
+                    "statementNumber": "8",
+                    "singleParent": true,
+                    "birthday": "17.08.2005",
+                    "statementDate": "25.=.=",
+                    "disabled": true,
+                    "taxDeduction": false,
+                    "tutor": false,
+                    "professionalDeduction": false,
+                    "socialDeduction": false,
+                    "note": "",
+                    "privilegesAmount": "1",
+                    "deductionCode": "",
+                    "deductionSum": "",
+                    "imns": "",
+                    "notificationNumber": "",
+                    "notificationDate": ""
+                },
+                "tariffSalary": "Должностной оклад*"
+            },
+            "payrolls": [
+                {
+                    "lastMonth": false,
+                    "payroll": "27",
+                    "order": "210-к",
+                    "date": "25.=.=",
+                    "dateFrom": "25.=.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["15", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": false,
+                    "payroll": "77",
+                    "order": "210-к",
+                    "date": "25.=.=",
+                    "dateFrom": "25.=.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["", "1053", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                },
+                {
+                    "lastMonth": false,
+                    "payroll": "4",
+                    "order": "210-к",
+                    "date": "25.=.=",
+                    "dateFrom": "25.=.=",
+                    "dateTo": "",
+                    "payrollSum": "",
+                    "averageIncomeSum": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "validity": "",
+                    "recalculate": false,
+                    "quantifyBan": false,
+                    "countDays": false,
+                    "parameters": ["10", "", "", "", "", "", "", "", ""],
+                    "group": "",
+                    "financing": "",
+                    "costs": ""
+                }
+            ],
+            "withholdings": [
+                {
+                    "lastMonth": false,
+                    "withholding": "1",
+                    "order": "170-к",
+                    "withholdingSum": "",
+                    "validity": "",
+                    "assessedDate": "",
+                    "awardedDate": "",
+                    "quantifyBan": false,
+                    "recalculation": false,
+                    "parameters": ["", "", "", "", "", "", "", "", ""],
+                    "paymentAccruals": "",
+                    "executiveSheet": ""
+                }
+            ],
+            "incomeTaxes": {
+                "date": "0516",
+                "taxSum": "5525",
+                "incomes": [
+                    {
+                        "sum": "60000",
+                        "type": "2000"
+                    },
+                    {
+                        "sum": "10000",
+                        "type": "2012"
+                    },
+                    {
+                        "sum": "8500",
+                        "type": "2300"
+                    }
+                ],
+                "deductions": [
+                    {
+                        "sum": "12000",
+                        "type": "105",
+                        "childsAmount": "0"
+                    },
+                    {
+                        "sum": "24000",
+                        "type": "121",
+                        "childsAmount": "0"
+                    }
+                ]
+            },
+            "referencePreviousPlace": [
+                {
+                    "issueDate": "28.04.2016",
+                    "referenceNumber": "1298",
+                    "insurer": "Росатомнадзор",
+                    "periods": [
+                        {
+                            "periodFrom": "01.01.2014",
+                            "periodTo": "31.12.2014",
+                            "include": true
+                        },
+                        {
+                            "periodFrom": "01.01.2015",
+                            "periodTo": "31.12.2015",
+                            "include": true
+                        },
+                        {
+                            "periodFrom": "01.01.2016",
+                            "periodTo": "28.04.2016",
+                            "include": true
+                        }
+                    ],
+                    "salary": [
+                        {
+                            "year": "2014",
+                            "sum": "350000",
+                            "include": true
+                        },
+                        {
+                            "year": "2015",
+                            "sum": "395000",
+                            "include": true
+                        },
+                        {
+                            "year": "2016",
+                            "sum": "72975",
+                            "include": true
+                        }
+                    ],
+                    "days": [
+                        {
+                            "year": "2014",
+                            "periodFrom": "15.10.2014",
+                            "periodTo": "17.10.2014",
+                            "amount": "3",
+                            "name": "3-отп. по уходу",
+                            "include": true
+                        },
+                        {
+                            "year": "2016",
+                            "periodFrom": "10.02.2016",
+                            "periodTo": "24.02.2016",
+                            "amount": "15",
+                            "name": "3-отп. по уходу",
+                            "include": true
+                        },
+                        {
+                            "year": "2016",
+                            "periodFrom": "26.02.2016",
+                            "periodTo": "03.03.2016",
+                            "amount": "7",
+                            "name": "1-б/л.",
+                            "include": true
+                        }
+                    ]
+                }
+            ],
+            "disabledReferences": [
+                {
+                    "fullName": "Парамонова",
+                    "reference": "Филиал № 78 ФГУ «ГБ МСЭ по г. Москве»",
+                    "referenceNumber": "2693671 МСЭ-2007",
+                    "date": "01.=.=",
+                    "group": "II",
+                    "validity": "01.=.+2"
+                }
+            ]
+        }
+  ]
+}
