@@ -352,7 +352,7 @@
                 "actualAddress": "127322, Москва, Малый Харьетоньевский пер., д.3, кв.10"
             },
             "pfr": {
-                "registrationNumber": "11524165116",
+                "registrationNumber": "11697338589",
                 "category": "Наемный работник",
                 "localityType": "",
                 "retirementDate": "",
@@ -746,6 +746,47 @@
                     "manager": ""
                 }
             ],
+            "ftn": [
+                {
+                    "base": "21000",
+                    "discount": "34000",
+                    "privilege": "0",
+                    "materialAssistance": "30000",
+                    "amount": "1"
+                }
+            ],
+            "fstn": [
+                {
+                    "fund": "Соц. страх 2.9%",
+                    "base": "55000",
+                    "disabledBase": "0",
+                    "discount": "34000",
+                    "deductions": "609",
+                    "disabledDeductions": "0",
+                    "materialAssistance": "30000",
+                    "amount": "1"
+                },
+                {
+                    "fund": "Фонд ОМС 5.1%",
+                    "base": "55000",
+                    "disabledBase": "0",
+                    "discount": "34000",
+                    "deductions": "1071",
+                    "disabledDeductions": "0",
+                    "materialAssistance": "30000",
+                    "amount": "1"
+                },
+                {
+                    "fund": "ПФ (страховая часть)",
+                    "base": "55000",
+                    "disabledBase": "0",
+                    "discount": "34000",
+                    "deductions": "4620",
+                    "disabledDeductions": "0",
+                    "materialAssistance": "30000",
+                    "amount": "1"
+                }
+              ],
             "fssRequests": [
                 {
                     "unit": "Филиал № 6 ГУ Отделения ФСС РФ г. Москвы",

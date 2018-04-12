@@ -9,7 +9,7 @@ from setup import *
 from datetime import *
 import dateutil.relativedelta
 
-TIMEOUT = 20
+TIMEOUT = 30
 
 
 def get_date(date):
@@ -75,6 +75,16 @@ class BasePage(object):
             if label:
                 print("[%s] [%s] заполнение значением \"%s\"" % (strftime("%H:%M:%S", localtime()), label, value))
 
+    def set_date_cut(self, locator, value, label=""):
+        if value:
+            element = self.wait(locator)
+            element.clear()
+            element.send_keys(value + Keys.RETURN)
+            element.send_keys(Keys.TAB)
+            WebDriverWait(self.driver, TIMEOUT).until(EC.invisibility_of_element_located((By.ID, "ui-datepicker-div")))
+            if label:
+                print("[%s] [%s] заполнение значением \"%s\"" % (strftime("%H:%M:%S", localtime()), label, value))
+
     def set_dropdown(self, locator, value, label=""):
         if value:
             element = self.wait(locator)
@@ -92,10 +102,16 @@ class BasePage(object):
                 print("[%s] [%s] установка флага в положение \"%s\"" % (strftime("%H:%M:%S",
                                                                                  localtime()), label, value))
 
+    def search_old(self, value):
+        elements = self.driver.find_element_by_xpath("(//*[@placeholder='Все поля'])[last()]")
+        elements.send_keys(value + Keys.RETURN)
+        self.wait_for_loading()
+
     def search(self, value):
-        elements = self.driver.find_elements_by_xpath("//input[@placeholder='Все поля']")
-        for i in elements:
-            i.send_keys(value + Keys.RETURN)
+        element = self.driver.find_elements_by_xpath("//*[@placeholder='Все поля']")
+        order = len(element)
+        elements = self.driver.find_element_by_xpath("(//input[@placeholder='Все поля'])[%s]" % order)
+        elements.send_keys(value + Keys.RETURN)
         self.wait_for_loading()
 
     def table_select_row_click(self, text, order=1, label=None):
@@ -107,17 +123,33 @@ class BasePage(object):
         if value:
             element = self.wait(locator).find_element(By.XPATH, ".//following-sibling::*[1]/button[2]")
             element.click()
-            sleep(1)
+            self.wait_for_loading()
+            sleep(5)
             self.search(value)
             self.click_by_name("Выбрать")
             if label:
                 print("[%s] [%s] выбор из справочника значения \"%s\"" % (strftime("%H:%M:%S",
                                                                                  localtime()), label, value))
 
+    def set_type2(self, locator, value, label=""):
+        if value:
+            element = self.wait(locator).find_element(By.XPATH, ".//following-sibling::*[1]/button[2]")
+            element.click()
+            sleep(1)
+            self.table_select_row_click(value)
+            self.click_by_name("Выбрать")
+            if label:
+                print("[%s] [%s] выбор из справочника значения \"%s\"" % (strftime("%H:%M:%S",
+                                                                                 localtime()), label, value))
+
+    def move_to_element(self, element):
+        self.wait_for_loading()
+        webdriver.ActionChains(self.driver).move_to_element(element).perform()
+
     def set_type_alt(self, value, label=""):
         if value:
             self.search(value)
-            self.click_by_name("Выбрать", 2)
+            self.click_by_name("Выбрать")
             if label:
                 print("[%s] [%s] выбор из справочника значения \"%s\"" % (strftime("%H:%M:%S",
                                                                                    localtime()), label, value))
@@ -177,6 +209,7 @@ class BasePage(object):
         return WebDriverWait(self.driver, TIMEOUT).until(
             EC.visibility_of_element_located(locator))
 
+
     def wait_for_loading(self):
         WebDriverWait(self.driver, TIMEOUT).until(
             EC.invisibility_of_element_located((By.XPATH, "//div[@class='gifPreloader ng-scope']")))
@@ -184,6 +217,9 @@ class BasePage(object):
             EC.visibility_of_element_located((By.XPATH, "//div[@class='windows8']")))
         WebDriverWait(self.driver, TIMEOUT).until_not(
             EC.visibility_of_element_located((By.XPATH, "//div[@class='w2ui-lock']")))
+        WebDriverWait(self.driver, TIMEOUT).until_not(
+            EC.visibility_of_element_located((By.XPATH, "//div[@id='loadingSpinner']")))
+
 
 
 class LoginPage(BasePage):
@@ -200,8 +236,8 @@ class LoginPage(BasePage):
     def lot(self, value):
         self.set_dropdown(LoginLocators.lot, value, "Участок")
 
-    def date(self, value):
-        self.set_date(LoginLocators.date, value, "")
+    # def date(self, value):
+    #     self.set_date(LoginLocators.date, value, "")
 
     def submit(self):
             self.click(LoginLocators.submit, "Войти")
@@ -297,7 +333,7 @@ class EmployeeCardPage(BasePage):
         self.click(EmployeeCardLocators.dialog_save, "Сохранить")
 
     def tariff_salary(self, value):
-        self.set_type(EmployeeCardLocators.tariff_salary, value, "Начисление для окалада/тарифа")
+        self.set_type2(EmployeeCardLocators.tariff_salary, value, "Начисление для окалада/тарифа")
 
 
 class PersonalAccountPage(BasePage):
@@ -591,7 +627,8 @@ class EmployeePrivilegesPage(BasePage):
         self.set_value(EmployeePrivilegesLocators.note, value, "Примечание")
 
     def privileges_amount(self, value):
-        self.set_value(EmployeePrivilegesLocators.privileges_amount, value, "Количество льгот (только для льготы на сотрудника)")
+        self.set_value(EmployeePrivilegesLocators.privileges_amount, value,
+                       "Количество льгот (только для льготы на сотрудника)")
 
     def deduction_code(self, value):
         self.set_type(EmployeePrivilegesLocators.deduction_code, value, "Код имущественного/социального вычета")
@@ -603,10 +640,13 @@ class EmployeePrivilegesPage(BasePage):
         self.set_value(EmployeePrivilegesLocators.imns, value, "ИМНС (для имущественного/социального вычета)")
 
     def notification_number(self, value):
-        self.set_value(EmployeePrivilegesLocators.notification_number, value, "Номер уведомления (для имущественного/социального вычета)")
+        self.set_value(
+            EmployeePrivilegesLocators.notification_number, value,
+            "Номер уведомления (для имущественного/социального вычета)")
 
     def notification_date(self, value):
-        self.set_date(EmployeePrivilegesLocators.notification_date, value, "Дата уведомления (для имущественного/социального вычета)")
+        self.set_date(EmployeePrivilegesLocators.notification_date, value,
+                      "Дата уведомления (для имущественного/социального вычета)")
 
     def submit(self):
         self.click(EmployeePrivilegesLocators.submit, "Сохранить")
@@ -912,17 +952,23 @@ class PayrollWithholdingPage(BasePage):
 
     def add_statement(self):
         self.click(PayrollWithholdingLocators.addition_input)
-        self.click(PayrollWithholdingLocators.requests)
+        element = self.driver.find_element(By.XPATH, "//li[a='Запросы для б/л']")
+        self.move_to_element(element)
+        sleep(1)
         self.click(PayrollWithholdingLocators.members_statement)
 
     def add_pf_request(self):
         self.click(PayrollWithholdingLocators.addition_input)
-        self.click(PayrollWithholdingLocators.requests)
+        element = self.driver.find_element(By.XPATH, "//li[a='Запросы для б/л']")
+        self.move_to_element(element)
+        sleep(1)
         self.click(PayrollWithholdingLocators.pf_request)
 
     def add_fss_request(self):
         self.click(PayrollWithholdingLocators.addition_input)
-        self.click(PayrollWithholdingLocators.requests)
+        element = self.driver.find_element(By.XPATH, "//li[a='Запросы для б/л']")
+        self.move_to_element(element)
+        sleep(1)
         self.click(PayrollWithholdingLocators.fss_request)
 
     def add_ftn(self):
@@ -1130,7 +1176,8 @@ class FSSRequestCardPage(BasePage):
         self.set_value(FSSRequestCardLocators.first_kpp, value, "КПП первого работодателя")
 
     def first_registration_number(self, value):
-        self.set_value(FSSRequestCardLocators.first_registration_number, value, "Регистрационный номер первого работодателя")
+        self.set_value(FSSRequestCardLocators.first_registration_number, value,
+                       "Регистрационный номер первого работодателя")
 
     def first_additional_code(self, value):
         self.set_value(FSSRequestCardLocators.first_additional_code, value, "Дополнительный код первого работодателя")
@@ -1157,7 +1204,8 @@ class FSSRequestCardPage(BasePage):
         self.set_value(FSSRequestCardLocators.second_kpp, value, "КПП второго работодателя")
 
     def second_registration_number(self, value):
-        self.set_value(FSSRequestCardLocators.second_registration_number, value, "Регистрационный номер второго работодателя")
+        self.set_value(FSSRequestCardLocators.second_registration_number, value,
+                       "Регистрационный номер второго работодателя")
 
     def second_additional_code(self, value):
         self.set_value(FSSRequestCardLocators.second_additional_code, value, "Дополнительный код второго работодателя")
@@ -1184,7 +1232,8 @@ class FSSRequestCardPage(BasePage):
         self.set_value(FSSRequestCardLocators.third_kpp, value, "КПП третьего работодателя")
 
     def third_registration_number(self, value):
-        self.set_value(FSSRequestCardLocators.third_registration_number, value, "Регистрационный номер третьего работодателя")
+        self.set_value(FSSRequestCardLocators.third_registration_number, value,
+                       "Регистрационный номер третьего работодателя")
 
     def third_additional_code(self, value):
         self.set_value(FSSRequestCardLocators.third_additional_code, value, "Дополнительный код третьего работодателя")
@@ -1268,7 +1317,7 @@ class IncomeCertificatePage(BasePage):
         self.click_by_name("Вычеты")
 
     def date(self, value):
-        self.set_date(IncomeCertificateLocators.date, value, "Месяц и год выхода")
+        self.set_date_cut(IncomeCertificateLocators.date, value, "Месяц и год выхода")
 
     def tax_sum(self, value):
         self.set_value(IncomeCertificateLocators.tax_sum, value, "Сумма налога")
@@ -1290,6 +1339,9 @@ class IncomeCertificatePage(BasePage):
 
     def submit(self):
         self.click_by_name("Сохранить")
+
+    def submit2(self):
+        self.click(IncomeCertificateLocators.submit2, "Сохранить")
 
 
 class ReferencePreviousPlacePage(BasePage):

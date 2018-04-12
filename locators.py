@@ -15,14 +15,20 @@ class MainLocators(object):
 
 
 class MenuLocators(object):
-
+    """
     menu_icon = (By.XPATH, "//button[@class='left-menu-toggle']")
     catalogs = (By.XPATH, "//span[normalize-space(text())='Справочники']")
     employees = (By.XPATH, "//span[normalize-space(text())='Сотрудники']")
     documents = (By.XPATH, "//span[normalize-space(text())='Документы']")
     disabled = (By.XPATH, "//span[normalize-space(text())='Инвалиды']")
     subdivision_structure = (By.XPATH, "//span[normalize-space(text())='Структура подразделений']")
-
+    """
+    menu_icon = (By.XPATH, "//button[@class='left-menu-toggle']")
+    catalogs = (By.XPATH, "//span[@class='ng-binding'][.='Справочники']")
+    employees = (By.XPATH, "//span[@class='ng-binding'][.='Сотрудники']")
+    documents = (By.XPATH, "//span[@class='ng-binding'][.='Документы']")
+    disabled = (By.XPATH, "//span[@class='ng-binding'][.='Инвалиды']")
+    subdivision_structure = (By.XPATH, "//span[@class='ng-binding'][.='Структура подразделений']")
 
 class EmployeesLocators(object):
 
@@ -145,7 +151,7 @@ class DisabledCardLocators(object):
 
 class PersonalAccountLocators(object):
 
-    tab = (By.XPATH, "//a[normalize-space(text())='Личные данные' and @role='tab']")
+    tab = (By.XPATH, "//a[normalize-space(text())='Л' and @role='tab']")
     add = (By.XPATH, "//button[@data-button-id='3274c2be-1ed3-4887-b014-2dadb892af22']")
 
 
@@ -407,13 +413,14 @@ class IncomeCertificateLocators(object):
     deduction_sum = (By.ID, "91dc80eb-8735-4593-a4de-e6dd2d3e7700")
     deduction_type = (By.ID, "587370bc-2ab4-441a-af33-e9340b4c4d5d")
     childs_amount = (By.ID, "73dcb52e-974d-40e7-bf53-0c6681fd79de")
+    submit2 = (By.XPATH, "(//button[.='Сохранить'])[2]")
 
 
 class ReferencePreviousPlaceLocators(object):
 
-    issue_date = (By.ID, "04047872-94d9-4da1-8063-b43e255f7681")
-    reference_number = (By.ID, "24c769c3-ea67-4726-ab9f-aea1a42648a1")
-    insurer = (By.ID, "839ddb43-eda9-4a3a-b423-9a44b29b5c39")
+    issue_date = (By.ID, "d4fba5d4-44cf-475a-b573-5d2d678f58ff")
+    reference_number = (By.ID, "a930b8ef-e397-4b09-ac54-444102502d6a")
+    insurer = (By.ID, "20234d8f-4e99-4a7b-9e87-85dd0ac5f907")
     periods_period_from = (By.ID, "86c77c3b-27ff-463c-9dc3-7946781b5dbf")
     periods_period_to = (By.ID, "d126ad92-ea15-4a51-aa0e-299407f0fbba")
     periods_include = (By.ID, "6846aa50-ffac-4739-8242-47cd13dc94b1")

@@ -37,7 +37,7 @@ class TestSuite:
         assert "Учет заработной платы" in self.driver.page_source
 
     @pytest.mark.parametrize("n", ["Артюшин", "Коновалов", "Зотова", "Парамонова"])
-    def te1st_new_employee(self, n):
+    def test_new_employee(self, n):
         """
         Проверяется возможность создание нового сотрудника. Заполняются все поля следующих вкладок: Документы,
         Адреса, Данные ПФР, Данные ФНС, История ФИО, Прочее.
@@ -55,12 +55,12 @@ class TestSuite:
         p.add()
 
         #
-        #p = PersonalAccountPage(self.driver)
-        #p.open()
+        # p = PersonalAccountPage(self.driver)
+        # p.open()
 
         #
         p = EmployeeCardPage(self.driver)
-        #p.open()
+        # p.open()
         p.last_name(data["lastName"])
         p.first_name(data["firstName"])
         p.middle_name(data["middleName"])
@@ -145,23 +145,20 @@ class TestSuite:
         вкладок: Сведения о лицевом счете, Сведения для расчета, Льготы на сотрудника.
         """
         data = get_employee_by_name(load_data("employees"), n)
-
-        #
-        #MainPage(self.driver).open()
+        # MainPage(self.driver).open()
         p = Menu(self.driver)
         p.open()
         p.catalogs()
         p.employees()
         EmployeesPage(self.driver).select_employee(n)
-
         #
         p = PersonalAccountPage(self.driver)
-        #p.open()
+        # p.open()
         p.add()
 
         #
         p = AccountInfoPage(self.driver)
-        #p.open()
+        # p.open()
         p.personnel_number(data["personalAccount"]["accountInfo"]["personnelNumber"])
         p.receipt_date(data["personalAccount"]["accountInfo"]["receiptDate"])
         p.order_number(data["personalAccount"]["accountInfo"]["orderNumber"])
@@ -182,6 +179,7 @@ class TestSuite:
         p.fired(data["personalAccount"]["accountInfo"]["fired"])
         p.dismissal_number(data["personalAccount"]["accountInfo"]["dismissalNumber"])
         p.employee_category(data["personalAccount"]["accountInfo"]["employeeCategory"])
+        sleep(5)
         p.class_rank(data["personalAccount"]["accountInfo"]["classRank"])
         p.union_member(data["personalAccount"]["accountInfo"]["unionMember"])
         p.member_from(data["personalAccount"]["accountInfo"]["memberFrom"])
@@ -246,11 +244,11 @@ class TestSuite:
         p.notification_number(data["personalAccount"]["employeePrivileges"]["notificationNumber"])
         p.notification_date(data["personalAccount"]["employeePrivileges"]["notificationDate"])
         p.submit()
-
         EmployeeCardPage(self.driver).submit2()
-
         #
-        EmployeeCardPage(self.driver).table_select_row_click(data["personalAccount"]["tariffSalary"])
+        EmployeeCardPage(self.driver).tariff_salary(data["personalAccount"]["tariffSalary"])
+        EmployeeCardPage(self.driver).submit2()
+        sleep(3)
         EmployeeCardPage(self.driver).submit()
 
     @pytest.mark.parametrize("n", ["Коновалов"])
@@ -261,7 +259,7 @@ class TestSuite:
         data = get_employee_by_name(load_data("employees"), n)
 
         #
-        #MainPage(self.driver).open()
+        # MainPage(self.driver).open()
         p = Menu(self.driver)
         p.open()
         p.documents()
@@ -281,15 +279,16 @@ class TestSuite:
             p.statement_date(statement["statementDate"])
             p.click_by_name("Сохранить")
 
-    @pytest.mark.parametrize("n", ["Коновалов."])
+    @pytest.mark.parametrize("n", ["Коновалов"])
     def test_add_pf_request(self, n):
         """
          Проверяется возможность запроса для б/л в ПФ.
         """
         data = get_employee_by_name(load_data("employees"), n)
 
+        print(data)
         #
-        #MainPage(self.driver).open()
+        # MainPage(self.driver).open()
         p = Menu(self.driver)
         p.open()
         p.documents()
@@ -323,7 +322,7 @@ class TestSuite:
         data = get_employee_by_name(load_data("employees"), n)
 
         #
-        #MainPage(self.driver).open()
+        # MainPage(self.driver).open()
         p = Menu(self.driver)
         p.open()
         p.documents()
@@ -367,7 +366,7 @@ class TestSuite:
             p.request_date(request["requestDate"])
             p.click_by_name("Сохранить")
 
-    @pytest.mark.parametrize("n", ["Зотова"])
+    @pytest.mark.parametrize("n", ["Коновалов"])
     def test_add_extra_budgetary_references(self, n):
         """
          Проверяется возможность добавления справки по внебюджетным фондам из обособленного подразделения
@@ -376,7 +375,7 @@ class TestSuite:
         data = get_employee_by_name(load_data("employees"), n)
 
         #
-       # MainPage(self.driver).open()
+        # MainPage(self.driver).open()
         p = Menu(self.driver)
         p.open()
         p.documents()
@@ -400,7 +399,7 @@ class TestSuite:
             p.click_by_name("Сохранить")
 
         #
-        #MainPage(self.driver).open()
+        # MainPage(self.driver).open()
         p = Menu(self.driver)
         p.open()
         p.documents()
@@ -435,7 +434,7 @@ class TestSuite:
         data = get_employee_by_name(load_data("employees"), n)
 
         #
-       # MainPage(self.driver).open()
+        # MainPage(self.driver).open()
         p = Menu(self.driver)
         p.open()
         p.documents()
@@ -463,7 +462,7 @@ class TestSuite:
         data = get_employee_by_name(load_data("employees"), n)
 
         #
-        #MainPage(self.driver).open()
+        # MainPage(self.driver).open()
         p = Menu(self.driver)
         p.open()
         p.documents()
@@ -503,6 +502,7 @@ class TestSuite:
             child.click_by_name("Сохранить")
             sleep(1)
             child.click_by_name("Да")
+            sleep(10)
 
         #
         parent = PayrollWithholdingPage(self.driver)
@@ -540,7 +540,7 @@ class TestSuite:
         data = get_employee_by_name(load_data("employees"), n)
 
         #
-       # MainPage(self.driver).open()
+        # MainPage(self.driver).open()
         p = Menu(self.driver)
         p.open()
         p.documents()
@@ -576,8 +576,10 @@ class TestSuite:
             p.deduction_type(i["type"])
             p.childs_amount(i["childsAmount"])
             p.submit()
+            sleep(5)
+        p.click_by_name("Закрыть", 2)
         p.click_by_name("Закрыть")
-        p.submit()
+        # p.submit()
 
     @pytest.mark.parametrize("n", ["Артюшин", "Коновалов", "Зотова", "Парамонова"])
     def test_reference_from_previous_place_of_work(self, n):
@@ -587,7 +589,7 @@ class TestSuite:
         data = get_employee_by_name(load_data("employees"), n)
 
         #
-       # MainPage(self.driver).open()
+        # MainPage(self.driver).open()
         p = Menu(self.driver)
         p.open()
         p.documents()
@@ -616,7 +618,7 @@ class TestSuite:
                 p.periods_period_to(i["periodTo"])
                 p.periods_include(i["include"])
                 p.click_by_name("Сохранить")
-            p.click_by_name("Закрыть", 3)
+            p.click_by_name("Закрыть", 2)
 
             #
             p.click_by_name("Сумма ЗП")
@@ -626,7 +628,7 @@ class TestSuite:
                 p.salary_sum(i["sum"])
                 p.salary_include(i["include"])
                 p.click_by_name("Сохранить")
-            p.click_by_name("Закрыть", 3)
+            p.click_by_name("Закрыть", 2)
 
             #
             p.click_by_name("Иcключаемые дни")
@@ -639,7 +641,7 @@ class TestSuite:
                 p.days_name(i["name"])
                 p.days_include(i["include"])
                 p.click_by_name("Сохранить")
-            p.click_by_name("Закрыть", 3)
+            p.click_by_name("Закрыть", 2)
         p.click_by_name("Закрыть")
 
     def test_logout(self):
