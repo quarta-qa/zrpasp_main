@@ -1,14 +1,15 @@
-from core import *
+from pages import *
 from setup import *
 import pytest
 
 
 class TestSuite:
+    driver = webdriver.Chrome("driver\\chromedriver.exe")
 
     @classmethod
     def setup_class(cls):
         """What happens BEFORE tests"""
-        cls.driver = webdriver.Chrome("C:\Python34\Scripts\chromedriver.exe")
+        #  cls.driver = webdriver.Chrome("C:\Python34\Scripts\chromedriver.exe")
         #  cls.driver =webdriver.Ie("C:\Python34\Scripts\IEDriverServer.exe")
         cls.driver.maximize_window()
 
@@ -178,6 +179,7 @@ class TestSuite:
         p.dismissal_date(data["personalAccount"]["accountInfo"]["dismissalDate"])
         p.fired(data["personalAccount"]["accountInfo"]["fired"])
         p.dismissal_number(data["personalAccount"]["accountInfo"]["dismissalNumber"])
+        sleep(5)
         p.employee_category(data["personalAccount"]["accountInfo"]["employeeCategory"])
         sleep(5)
         p.class_rank(data["personalAccount"]["accountInfo"]["classRank"])
@@ -640,6 +642,7 @@ class TestSuite:
                 p.days_amount(i["amount"])
                 p.days_name(i["name"])
                 p.days_include(i["include"])
+                sleep(3)
                 p.click_by_name("Сохранить")
             p.click_by_name("Закрыть", 2)
         p.click_by_name("Закрыть")

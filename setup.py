@@ -29,4 +29,4 @@ def get_account_by_name(data, value):
 
 class Links(object):
     main_page = "http://qtestzrpasp3.office.quarta-vk.ru:1090/"
-    login_page = "%s/account/login"
+    login_page = main_page + "/account/login"

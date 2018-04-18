@@ -678,13 +678,13 @@ class EmployeePrivilegesPage(BasePage):
 class WageIndexationPage(BasePage):
 
     def open(self):
-        self.select_tab("Сведения о лицевом счете")
+        self.click_by_name("Сведения о лицевом счете")
 
 
 class HistoryPage(BasePage):
 
     def open(self):
-        self.select_tab("Сведения о лицевом счете")
+        self.click_by_name("Сведения о лицевом счете")
 
 
 class DocumentsPage(BasePage):
