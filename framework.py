@@ -157,6 +157,7 @@ class Browser(object):
 
     # Функция поиска строки в таблице по текстовому полю "Все поля"
     def search(self, value, label=""):
+        self.wait.loading()
         element = self.driver.find_elements_by_xpath("//*[@placeholder='Все поля']")
         order = len(element)
         elements = self.driver.find_element_by_xpath("(//input[@placeholder='Все поля'])[%s]" % order)
@@ -185,7 +186,7 @@ class Browser(object):
             element = self.wait.element_appear(locator).find_element(By.XPATH, ".//following-sibling::*[1]/button[2]")
             element.click()
             self.wait.loading()
-            sleep(5)
+            sleep(3)
             self.search(value)
             self.click_by_name("Выбрать")
             if label:
@@ -204,7 +205,9 @@ class Browser(object):
                                                                                    localtime()), label, value))
 
     def set_type_alt(self, value, label=""):
+        self.wait.loading()
         if value:
+            sleep(1)
             self.search(value)
             self.click_by_name("Выбрать")
             if label:
@@ -221,21 +224,6 @@ class Browser(object):
             if label and self.log:
                 print("[%s] [%s] заполнение значением \"%s\"" % (strftime("%H:%M:%S", localtime()), label, value))
 
-    # Функция заполнения текстового поля без локатора
-    def set_text_wl(self, name, value, label=None, order=1):
-        if value:
-            self.wait.loading()
-            element = self.wait.element_appear(
-                (By.XPATH, "(//*[@name='%s'])[%s]//*[self::input or self::textarea]" % (name, order)))
-            element.clear()
-            element.send_keys(value)
-            if label:
-                pass
-            else:
-                label = self.driver.find_element_by_xpath("(//label[@for='%s'])[%s]" % (name, order)).text
-            if label and self.log:
-                print(
-                    "[%s] [%s] заполнение значением \"%s\"" % (strftime("%H:%M:%S", localtime()), label, value))
 
     # Функция заполнения поля Дата
     def set_date(self, locator, value, label=None):
@@ -354,6 +342,8 @@ class Browser(object):
         print(
             "[%s] Выбор строки с аттрибутами \"%s\" и \"%s\"" % (strftime("%H:%M:%S", localtime()), value, value2))
 
+
+
     # Функция выбора строки в таблице и нажатие на неё
     def table_select_row_click(self, text, order=1, label=None):
         self.wait.loading()
@@ -461,7 +451,7 @@ class Browser(object):
         element.click()
         if value:
             print("[%s] [%s] нажатие на элемент" % (strftime("%H:%M:%S", localtime()), value))
-        self.wait.loading()
+            self.wait.loading()
 
     def click_on_employee(self, value):
         element = self.wait.element_appear((By.XPATH, "//*[self::a or self::span][.='%s']" % value))
@@ -668,6 +658,18 @@ class Checker(object):
             print("[%s] НЕ СООТВЕТСТВУЕТ" % strftime("%H:%M:%S", localtime()))
             return False
 
+    # Функция поиска строки в таблице по 2 аттрибутам
+    def search_by_two_attributes_info(self, value, value2):
+        self.wait.loading()
+        try:
+            element = self.wait.element_appear((
+                By.XPATH, "//tr[@line and contains(., '{0}') and contains(., '{1}')]".format(value, value2)))
+            print(
+                "[%s] ПРОВЕРКА СТРОКИ! Найдена строка с аттрибутами \"%s\" и \"%s\"" % (
+                    strftime("%H:%M:%S", localtime()), value, value2))
+        except TimeoutException:
+            print("Doesnt exist")
+
 
 # Работа с данными
 class Data(object):
@@ -763,7 +765,7 @@ class File(object):
     @staticmethod
     def analyze_two_files(filename):
         test_default = 'C:\\Users\\' + os.getlogin() + '\\Downloads\\'
-        test_compare = 'C:\\Compare\\'
+        test_compare = 'C:\\Compare_zrp\\'
         File.file_copy(filename)
         reference_file = test_default + filename
         output_file = test_compare + filename

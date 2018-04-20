@@ -209,7 +209,6 @@ class BasePage(object):
         return WebDriverWait(self.driver, TIMEOUT).until(
             EC.visibility_of_element_located(locator))
 
-
     def wait_for_loading(self):
         WebDriverWait(self.driver, TIMEOUT).until(
             EC.invisibility_of_element_located((By.XPATH, "//div[@class='gifPreloader ng-scope']")))
@@ -221,9 +220,7 @@ class BasePage(object):
             EC.visibility_of_element_located((By.XPATH, "//div[@id='loadingSpinner']")))
 
 
-
 class LoginPage(BasePage):
-
     def open(self):
         self.driver.get(Links.login_page)
 

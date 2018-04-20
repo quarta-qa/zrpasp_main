@@ -347,6 +347,8 @@ class PayrollWithholdingLocators(object):
     data_ftn = (By.XPATH, "//a[@data-button-id='f3a383b0-6a94-4315-9ecb-2fab0f740f46']")
     data_fstn = (By.XPATH, "//a[@data-button-id='b91f0f96-5777-46c2-97da-babbda123519']")
     reference_previous_place = (By.XPATH, "//a[@data-button-id='0adf9a17-63bb-4943-9297-7cb3ede4e157']")
+    employee_reports = (By.XPATH, "//button[contains(., 'Отчеты по сотруднику')]")
+    settlement_sheet = (By.XPATH, "//a[@data-button-id='2a5b6b92-8d65-4aea-ba28-d79c7e36571a']")
 
 
 class PayrollCardLocators(object):

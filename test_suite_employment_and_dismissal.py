@@ -38,7 +38,7 @@ class TestSuite:
         assert "Учет заработной платы" in self.driver.page_source
 
     @pytest.mark.parametrize("n", ["Артюшин", "Коновалов", "Зотова", "Парамонова"])
-    def test_new_employee(self, n):
+    def te1st_new_employee(self, n):
         """
         Проверяется возможность создание нового сотрудника. Заполняются все поля следующих вкладок: Документы,
         Адреса, Данные ПФР, Данные ФНС, История ФИО, Прочее.
@@ -138,9 +138,11 @@ class TestSuite:
         p.crimea(data["other"]["crimea"])
 
         EmployeeCardPage(self.driver).save()
+        p.search(data["lastName"])
+        p.checker.search_by_two_attributes_info(data["lastName"], data["firstName"])
 
     @pytest.mark.parametrize("n", ["Артюшин", "Коновалов", "Зотова", "Парамонова"])
-    def test_add_personal_account(self, n):
+    def te1st_add_personal_account(self, n):
         """
         Проверяется возможность добавления лицевого счета существующему сотруднику. Заполняются все поля из следующих
         вкладок: Сведения о лицевом счете, Сведения для расчета, Льготы на сотрудника.
@@ -179,9 +181,9 @@ class TestSuite:
         p.dismissal_date(data["personalAccount"]["accountInfo"]["dismissalDate"])
         p.fired(data["personalAccount"]["accountInfo"]["fired"])
         p.dismissal_number(data["personalAccount"]["accountInfo"]["dismissalNumber"])
-        sleep(5)
+        sleep(3)
         p.employee_category(data["personalAccount"]["accountInfo"]["employeeCategory"])
-        sleep(5)
+        sleep(3)
         p.class_rank(data["personalAccount"]["accountInfo"]["classRank"])
         p.union_member(data["personalAccount"]["accountInfo"]["unionMember"])
         p.member_from(data["personalAccount"]["accountInfo"]["memberFrom"])
@@ -246,15 +248,19 @@ class TestSuite:
         p.notification_number(data["personalAccount"]["employeePrivileges"]["notificationNumber"])
         p.notification_date(data["personalAccount"]["employeePrivileges"]["notificationDate"])
         p.submit()
+        p.checker.search_by_two_attributes_info(data["personalAccount"]["employeePrivileges"]["dateStart"],
+                                                data["personalAccount"]["employeePrivileges"]["dateEnd"])
         EmployeeCardPage(self.driver).submit2()
         #
         EmployeeCardPage(self.driver).tariff_salary(data["personalAccount"]["tariffSalary"])
         EmployeeCardPage(self.driver).submit2()
+        p.checker.search_by_two_attributes_info(data["personalAccount"]["accountInfo"]["receiptDate"],
+                                                data["personalAccount"]["accountInfo"]["position"])
         sleep(3)
         EmployeeCardPage(self.driver).submit()
 
     @pytest.mark.parametrize("n", ["Коновалов"])
-    def test_add_members_statement(self, n):
+    def te1st_add_members_statement(self, n):
         """
          Проверяется возможность добавления начислений/удержаний существующему сотруднику.
         """
@@ -280,9 +286,13 @@ class TestSuite:
             p.payment(statement["payment"])
             p.statement_date(statement["statementDate"])
             p.click_by_name("Сохранить")
+            sleep(5)
+            File.compare_files('Заявление застрахованного лица по приказу Минздравсоцразвития'
+                               ' России от 24.01.2011 № 21н.xls')
+            sleep(1)
 
     @pytest.mark.parametrize("n", ["Коновалов"])
-    def test_add_pf_request(self, n):
+    def te1st_add_pf_request(self, n):
         """
          Проверяется возможность запроса для б/л в ПФ.
         """
@@ -301,7 +311,7 @@ class TestSuite:
         #
         for request in data["pfRequests"]:
             p = PFRequestCardPage(self.driver)
-            sleep(20)
+            sleep(2)
             p.unit(request["unit"])
             p.additional(request["additional"])
             p.full_name(request["fullName"])
@@ -315,9 +325,12 @@ class TestSuite:
             p.request_number(request["requestNumber"])
             p.manager(request["manager"])
             p.click_by_name("Сохранить")
+            sleep(10)
+            File.compare_files('Заявление в ПФР по приказу Минздравсоцразвития России от 24.01.2011 № 21н.xls')
+            sleep(1)
 
     @pytest.mark.parametrize("n", ["Коновалов"])
-    def test_add_fss_request(self, n):
+    def te1st_add_fss_request(self, n):
         """
          Проверяется возможность добавления запроса для б/л в ФСС.
         """
@@ -367,9 +380,12 @@ class TestSuite:
             p.third_period_to(request["thirdPeriodTo"])
             p.request_date(request["requestDate"])
             p.click_by_name("Сохранить")
+            sleep(10)
+            File.compare_files('Заявление в ФСС по приказу Минздравсоцразвития России от 24.01.2011 № 20н.xls')
+            sleep(1)
 
     @pytest.mark.parametrize("n", ["Коновалов"])
-    def test_add_extra_budgetary_references(self, n):
+    def te1st_add_extra_budgetary_references(self, n):
         """
          Проверяется возможность добавления справки по внебюджетным фондам из обособленного подразделения
          существующему сотруднику.
@@ -387,10 +403,9 @@ class TestSuite:
         p = PayrollWithholdingPage(self.driver)
         p.check_employee(n)
         p.add_ftn()
-
         #
         for reference in data["ftn"]:
-            sleep(10)
+            sleep(5)
             FTNPage(self.driver).add()
             p = FTNCardPage(self.driver)
             p.base(reference["base"])
@@ -399,6 +414,7 @@ class TestSuite:
             p.material_assistance(reference["materialAssistance"])
             p.amount(reference["amount"])
             p.click_by_name("Сохранить")
+            p.checker.search_by_two_attributes_info(reference["discount"], reference["amount"])
 
         #
         # MainPage(self.driver).open()
@@ -427,9 +443,10 @@ class TestSuite:
             p.material_assistance(reference["materialAssistance"])
             p.amount(reference["amount"])
             p.click_by_name("Сохранить")
+            p.checker.search_by_two_attributes_info(reference["fund"], reference["deductions"])
 
     @pytest.mark.parametrize("n", ["Парамонова"])
-    def test_add_disabled_reference(self, n):
+    def te1st_add_disabled_reference(self, n):
         """
          Проверяется возможность добавления справки об инвалидности.
         """
@@ -455,9 +472,10 @@ class TestSuite:
             p.group(reference["group"])
             p.validity(reference["validity"])
             p.click_by_name("Сохранить")
+            p.checker.search_by_two_attributes_info(reference["fullName"], reference["reference"])
 
     @pytest.mark.parametrize("n", ["Артюшин", "Коновалов", "Зотова", "Парамонова"])
-    def test_add_payroll_and_withholding(self, n):
+    def te1st_add_payroll_and_withholding(self, n):
         """
          Проверяется возможность добавления начислений/удержаний существующему сотруднику.
         """
@@ -475,12 +493,12 @@ class TestSuite:
         #
         flag = True
         for i in data["payrolls"]:
-            if i["lastMonth"] and flag:
-                flag = False
-                parent.prev_month()
-            if not i["lastMonth"] and not flag:
-                flag = True
-                parent.next_month()
+            # if i["lastMonth"] and flag:
+            #     flag = False
+            #     parent.prev_month()
+            # if not i["lastMonth"] and not flag:
+            #     flag = True
+            #     parent.next_month()
             #
             parent.add_payroll()
             parent.set_type_alt(i["payroll"], "Справочник начислений")
@@ -509,13 +527,12 @@ class TestSuite:
         #
         parent = PayrollWithholdingPage(self.driver)
         for i in data["withholdings"]:
-            if i["lastMonth"] and flag:
-                flag = False
-                parent.prev_month()
-            if not i["lastMonth"] and not flag:
-                flag = True
-                parent.next_month()
-
+            # if i["lastMonth"] and flag:
+            #     flag = False
+            #     parent.prev_month()
+            # if not i["lastMonth"] and not flag:
+            #     flag = True
+            #     parent.next_month()
             #
             parent.add_withholding()
             parent.set_type_alt(i["withholding"], "Справочник удержаний")
@@ -532,7 +549,8 @@ class TestSuite:
             child.executive_sheet(i["executiveSheet"])
             child.click_by_name("Сохранить", 2)
 
-        sleep(5)
+        sleep(10)
+        parent.print_settlement_sheet(data["printForms"]["settlementSlip"])
 
     @pytest.mark.parametrize("n", ["Артюшин", "Коновалов", "Зотова", "Парамонова"])
     def test_add_employee_earning_certificate(self, n):
@@ -584,7 +602,7 @@ class TestSuite:
         # p.submit()
 
     @pytest.mark.parametrize("n", ["Артюшин", "Коновалов", "Зотова", "Парамонова"])
-    def test_reference_from_previous_place_of_work(self, n):
+    def te1st_reference_from_previous_place_of_work(self, n):
         """
          Проверяется возможность добавления справки с предыдущего места работы.
         """

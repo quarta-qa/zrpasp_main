@@ -66,7 +66,7 @@
             "personalAccount": {
                 "accountInfo": {
                   "personnelNumber": "",
-                  "receiptDate": "05.=.=",
+                  "receiptDate": "05.04.2018",
                   "orderNumber": "200-к",
                   "salaryAmount": "6222.00",
                   "workingHours": "",
@@ -115,12 +115,12 @@
                   "paymentMethod": "Банк",
                   "cardNumber": "4390560002630260",
                   "fullName": "",
-                  "validity": "08.+1",
+                  "validity": "0819",
                   "bankList": "",
                   "key": ""
                 },
                 "employeePrivileges": {
-                  "dateStart": "05.=.=",
+                  "dateStart": "05.04.2018",
                   "dateEnd": "",
                   "childPrivilege": true,
                   "renouncement": false,
@@ -128,7 +128,7 @@
                   "statementNumber": "5",
                   "singleParent": false,
                   "birthday": "15.05.2003",
-                  "statementDate": "05.=.=",
+                  "statementDate": "05.04.2018",
                   "disabled": false,
                   "taxDeduction": false,
                   "tutor": false,
@@ -149,8 +149,8 @@
                     "lastMonth": false,
                     "payroll": "27",
                     "order": "200-к",
-                    "date": "05.=.=",
-                    "dateFrom": "05.=.=",
+                    "date": "05.04.2018",
+                    "dateFrom": "05.04.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -169,8 +169,8 @@
                     "lastMonth": false,
                     "payroll": "77",
                     "order": "200-к",
-                    "date": "05.=.=",
-                    "dateFrom": "05.=.=",
+                    "date": "05.04.2018",
+                    "dateFrom": "05.04.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -189,8 +189,8 @@
                     "lastMonth": false,
                     "payroll": "4",
                     "order": "200-к",
-                    "date": "05.=.=",
-                    "dateFrom": "05.=.=",
+                    "date": "05.04.2018",
+                    "dateFrom": "05.04.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -209,8 +209,8 @@
                     "lastMonth": false,
                     "payroll": "11",
                     "order": "200-к",
-                    "date": "05.=.=",
-                    "dateFrom": "05.=.=",
+                    "date": "05.04.2018",
+                    "dateFrom": "05.04.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -261,15 +261,10 @@
             },
             "referencePreviousPlace": [
                 {
-                    "issueDate": "28.09.2016",
+                    "issueDate": "28.09.2017",
                     "referenceNumber": "1296",
                     "insurer": "Росстрахнадзор",
                     "periods": [
-                        {
-                            "periodFrom": "01.01.2014",
-                            "periodTo": "31.12.2014",
-                            "include": true
-                        },
                         {
                             "periodFrom": "01.01.2015",
                             "periodTo": "31.12.2015",
@@ -279,45 +274,57 @@
                             "periodFrom": "01.01.2016",
                             "periodTo": "31.12.2016",
                             "include": true
+                        },
+                        {
+                            "periodFrom": "01.01.2017",
+                            "periodTo": "31.12.2017",
+                            "include": true
                         }
                     ],
                     "salary": [
                         {
-                            "year": "2014",
+                            "year": "2015",
                             "sum": "350000",
                             "include": true
                         },
                         {
-                            "year": "2015",
+                            "year": "2016",
                             "sum": "375000",
                             "include": true
                         },
                         {
-                            "year": "2016",
+                            "year": "2017",
                             "sum": "28568",
                             "include": true
                         }
                     ],
                     "days": [
                         {
-                            "year": "2015",
-                            "periodFrom": "15.10.2015",
-                            "periodTo": "17.10.2015",
+                            "year": "2016",
+                            "periodFrom": "15.10.2016",
+                            "periodTo": "17.10.2016",
                             "amount": "3",
                             "name": "1-б/л.",
                             "include": true
                         },
                       {
-                            "year": "2015",
-                            "periodFrom": "22.12.2015",
-                            "periodTo": "26.12.2015",
+                            "year": "2016",
+                            "periodFrom": "22.12.2016",
+                            "periodTo": "26.12.2016",
                             "amount": "5",
                             "name": "1-б/л.",
                             "include": true
                         }
                     ]
                 }
-            ]
+            ],
+            "printForms":{
+              "settlementSlip": "Расчетный листок.xls",
+              "payslip": "Расчетная ведомость.xls"
+            }
+
+
+
         },
         {
             "lastName": "Коновалов",
@@ -385,7 +392,7 @@
             "personalAccount": {
                 "accountInfo": {
                   "personnelNumber": "",
-                  "receiptDate": "26.-1.=",
+                  "receiptDate": "26.03.2018",
                   "orderNumber": "170-к",
                   "salaryAmount": "5381.00",
                   "workingHours": "",
@@ -439,7 +446,7 @@
                   "key": ""
                 },
                 "employeePrivileges": {
-                  "dateStart": "26.-1.=",
+                  "dateStart": "26.03.2018",
                   "dateEnd": "",
                   "childPrivilege": false,
                   "renouncement": false,
@@ -468,8 +475,8 @@
                     "lastMonth": false,
                     "payroll": "1",
                     "order": "170-к",
-                    "date": "26.-1.=",
-                    "dateFrom": "26.-1.=",
+                    "date": "26.03.2018",
+                    "dateFrom": "26.03.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -488,8 +495,8 @@
                     "lastMonth": false,
                     "payroll": "27",
                     "order": "170-к",
-                    "date": "26.-1.=",
-                    "dateFrom": "26.-1.=",
+                    "date": "26.03.2018",
+                    "dateFrom": "26.03.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -508,8 +515,8 @@
                     "lastMonth": false,
                     "payroll": "77",
                     "order": "170-к",
-                    "date": "26.-1.=",
-                    "dateFrom": "26.-1.=",
+                    "date": "26.03.2018",
+                    "dateFrom": "26.03.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -528,8 +535,8 @@
                     "lastMonth": false,
                     "payroll": "4",
                     "order": "170-к",
-                    "date": "26.-1.=",
-                    "dateFrom": "26.-1.=",
+                    "date": "26.03.2018",
+                    "dateFrom": "26.03.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -548,8 +555,8 @@
                     "lastMonth": false,
                     "payroll": "11",
                     "order": "170-к",
-                    "date": "26.-1.=",
-                    "dateFrom": "26.-1.=",
+                    "date": "26.03.2018",
+                    "dateFrom": "26.03.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -568,8 +575,8 @@
                     "lastMonth": true,
                     "payroll": "27",
                     "order": "170-к",
-                    "date": "26.-1.=",
-                    "dateFrom": "26.-1.=",
+                    "date": "26.03.2018",
+                    "dateFrom": "26.03.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -588,8 +595,8 @@
                     "lastMonth": true,
                     "payroll": "77",
                     "order": "170-к",
-                    "date": "26.-1.=",
-                    "dateFrom": "26.-1.=",
+                    "date": "26.03.2018",
+                    "dateFrom": "26.03.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -608,8 +615,8 @@
                     "lastMonth": true,
                     "payroll": "4",
                     "order": "170-к",
-                    "date": "26.-1.=",
-                    "dateFrom": "26.-1.=",
+                    "date": "26.03.2018",
+                    "dateFrom": "26.03.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -628,8 +635,8 @@
                     "lastMonth": true,
                     "payroll": "11",
                     "order": "170-к",
-                    "date": "26.-1.=",
-                    "dateFrom": "26.-1.=",
+                    "date": "26.03.2018",
+                    "dateFrom": "26.03.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -680,38 +687,38 @@
             },
             "referencePreviousPlace": [
                 {
-                    "issueDate": "15.04.2016",
+                    "issueDate": "15.04.2017",
                     "referenceNumber": "1297",
                     "insurer": "ООО «Рассвет»",
                     "periods": [
                         {
-                            "periodFrom": "15.01.2015",
-                            "periodTo": "31.12.2015",
+                            "periodFrom": "15.01.2016",
+                            "periodTo": "31.12.2016",
                             "include": true
                         },
                         {
-                            "periodFrom": "01.01.2016",
-                            "periodTo": "15.04.2016",
+                            "periodFrom": "01.01.2017",
+                            "periodTo": "15.04.2017",
                             "include": true
                         }
                     ],
                     "salary": [
                         {
-                            "year": "2015",
+                            "year": "2016",
                             "sum": "295000",
                             "include": true
                         },
                         {
-                            "year": "2016",
+                            "year": "2017",
                             "sum": "26295",
                             "include": true
                         }
                     ],
                     "days": [
                         {
-                            "year": "2015",
-                            "periodFrom": "15.10.2015",
-                            "periodTo": "17.10.2015",
+                            "year": "2016",
+                            "periodFrom": "15.10.2016",
+                            "periodTo": "17.10.2016",
                             "amount": "3",
                             "name": "1-б/л.",
                             "include": true
@@ -723,11 +730,11 @@
                 {
                     "fullName": "Коновалова Виктора Ивановича",
                     "periodFrom": "01.01.20104",
-                    "periodTo": "27.12.2014",
+                    "periodTo": "27.12.2015",
                     "insurer": "ООО «Диана»",
                     "reason": "Ликвидация организации",
                     "payment": "1 - по временной нетрудоспособности",
-                    "statementDate": "16.=.="
+                    "statementDate": "16.04.2018"
                 }
             ],
             "pfRequests": [
@@ -735,55 +742,55 @@
                     "unit": "Главное Управление ПФР № 10 по Москве и Московской области",
                     "additional": "",
                     "fullName": "Коновалова Виктора Ивановича",
-                    "yearFirst": "2014",
+                    "yearFirst": "2015",
                     "yearSecond": "0",
                     "yearThird": "0",
                     "insurer": "ООО «Диана»",
                     "reason": "Ликвидация организации",
                     "payment": "1 - по временной нетрудоспособности",
-                    "requestDate": "16.=.=",
+                    "requestDate": "16.04.2018",
                     "requestNumber": "724",
                     "manager": ""
                 }
             ],
             "ftn": [
                 {
-                    "base": "21000",
-                    "discount": "34000",
+                    "base": "21 000",
+                    "discount": "34 000",
                     "privilege": "0",
-                    "materialAssistance": "30000",
+                    "materialAssistance": "30 000",
                     "amount": "1"
                 }
             ],
             "fstn": [
                 {
                     "fund": "Соц. страх 2.9%",
-                    "base": "55000",
+                    "base": "55 000",
                     "disabledBase": "0",
-                    "discount": "34000",
+                    "discount": "34 000",
                     "deductions": "609",
                     "disabledDeductions": "0",
-                    "materialAssistance": "30000",
+                    "materialAssistance": "30 000",
                     "amount": "1"
                 },
                 {
                     "fund": "Фонд ОМС 5.1%",
-                    "base": "55000",
+                    "base": "55 000",
                     "disabledBase": "0",
-                    "discount": "34000",
-                    "deductions": "1071",
+                    "discount": "34 000",
+                    "deductions": "1 071",
                     "disabledDeductions": "0",
-                    "materialAssistance": "30000",
+                    "materialAssistance": "30 000",
                     "amount": "1"
                 },
                 {
                     "fund": "ПФ (страховая часть)",
-                    "base": "55000",
+                    "base": "55 000",
                     "disabledBase": "0",
-                    "discount": "34000",
-                    "deductions": "4620",
+                    "discount": "34 000",
+                    "deductions": "4 620",
                     "disabledDeductions": "0",
-                    "materialAssistance": "30000",
+                    "materialAssistance": "30 000",
                     "amount": "1"
                 }
               ],
@@ -799,8 +806,8 @@
                     "firstRegistrationNumber": "45789525855222",
                     "firstAdditionalCode": "",
                     "firstCode": "",
-                    "firstPeriodFrom": "15.01.2015",
-                    "firstPeriodTo": "15.04.2016",
+                    "firstPeriodFrom": "15.01.2016",
+                    "firstPeriodTo": "15.04.2017",
                     "secondEmployer": "",
                     "secondItn": "",
                     "secondUnit": "",
@@ -819,9 +826,13 @@
                     "thirdCode": "",
                     "thirdPeriodFrom": "",
                     "thirdPeriodTo": "",
-                    "requestDate": "16.=.="
+                    "requestDate": "16.04.2018"
                 }
-            ]
+            ],
+            "printForms":{
+              "settlementSlip": "Расчетный листок (1).xls",
+              "payslip": "Расчетная ведомость.xls"
+            }
         },
         {
             "lastName": "Зотова",
@@ -889,7 +900,7 @@
             "personalAccount": {
                 "accountInfo": {
                     "personnelNumber": "",
-                    "receiptDate": "16.=.=",
+                    "receiptDate": "16.04.2018",
                     "orderNumber": "197-к",
                     "salaryAmount": "4372.00",
                     "workingHours": "",
@@ -938,20 +949,20 @@
                     "paymentMethod": "Банк",
                     "cardNumber": "4390580002630567",
                     "fullName": "",
-                    "validity": "08.+1",
+                    "validity": "0819",
                     "bankList": "",
                     "key": ""
                 },
                 "employeePrivileges": {
-                    "dateStart": "16.=.=",
+                    "dateStart": "16.04.2018",
                     "dateEnd": "",
                     "childPrivilege": true,
                     "renouncement": true,
                     "childNumber": "1",
                     "statementNumber": "6",
                     "singleParent": false,
-                    "birthday": "15.03.2016",
-                    "statementDate": "16.=.=",
+                    "birthday": "15.03.2017",
+                    "statementDate": "16.04.2018",
                     "disabled": false,
                     "taxDeduction": false,
                     "tutor": false,
@@ -972,8 +983,8 @@
                     "lastMonth": false,
                     "payroll": "27",
                     "order": "197-к",
-                    "date": "16.=.=",
-                    "dateFrom": "16.=.=",
+                    "date": "16.04.2018",
+                    "dateFrom": "16.04.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -992,8 +1003,8 @@
                     "lastMonth": false,
                     "payroll": "77",
                     "order": "197-к",
-                    "date": "16.=.=",
-                    "dateFrom": "16.=.=",
+                    "date": "16.04.2018",
+                    "dateFrom": "16.04.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -1012,8 +1023,8 @@
                     "lastMonth": false,
                     "payroll": "4",
                     "order": "197-к",
-                    "date": "16.=.=",
-                    "dateFrom": "16.=.=",
+                    "date": "16.04.2018",
+                    "dateFrom": "16.04.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -1032,8 +1043,8 @@
                     "lastMonth": false,
                     "payroll": "11",
                     "order": "197-к",
-                    "date": "16.=.=",
-                    "dateFrom": "16.=.=",
+                    "date": "16.04.2018",
+                    "dateFrom": "16.04.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -1102,54 +1113,54 @@
             },
             "referencePreviousPlace": [
                 {
-                    "issueDate": "28.04.2016",
+                    "issueDate": "28.04.2017",
                     "referenceNumber": "1295",
                     "insurer": "Федеральное государственное бюджетное учреждение «Главный центр связи и спутниковых систем»",
                     "periods": [
                         {
-                            "periodFrom": "01.01.2015",
-                            "periodTo": "31.12.2015",
+                            "periodFrom": "01.01.2016",
+                            "periodTo": "31.12.2016",
                             "include": true
                         },
                         {
-                            "periodFrom": "01.01.2016",
-                            "periodTo": "28.04.2016",
+                            "periodFrom": "01.01.2017",
+                            "periodTo": "28.04.2017",
                             "include": true
                         }
                     ],
                     "salary": [
                         {
-                            "year": "2015",
+                            "year": "2016",
                             "sum": "286000",
                             "include": true
                         },
                         {
-                            "year": "2016",
+                            "year": "2017",
                             "sum": "53726",
                             "include": true
                         }
                     ],
                     "days": [
                         {
-                            "year": "2015",
-                            "periodFrom": "15.10.2015",
-                            "periodTo": "17.10.2015",
+                            "year": "2016",
+                            "periodFrom": "15.10.2016",
+                            "periodTo": "17.10.2016",
                             "amount": "3",
                             "name": "1-б/л.",
                             "include": true
                         },
                         {
-                            "year": "2015",
-                            "periodFrom": "01.11.2015",
-                            "periodTo": "31.12.2015",
+                            "year": "2016",
+                            "periodFrom": "01.11.2016",
+                            "periodTo": "31.12.2016",
                             "amount": "61",
                             "name": "2-б/л бер. и род.",
                             "include": true
                         },
                         {
-                            "year": "2016",
-                            "periodFrom": "01.01.2016",
-                            "periodTo": "31.01.2016",
+                            "year": "2017",
+                            "periodFrom": "01.01.2017",
+                            "periodTo": "31.01.2017",
                             "amount": "30",
                             "name": "2-б/л бер. и род.",
                             "include": true
@@ -1157,28 +1168,28 @@
                     ]
                 },
                 {
-                    "issueDate": "30.12.2014",
+                    "issueDate": "30.12.2015",
                     "referenceNumber": "195",
                     "insurer": "ООО «Опал»",
                     "periods": [
                         {
-                            "periodFrom": "01.01.2014",
-                            "periodTo": "31.12.2014",
+                            "periodFrom": "01.01.2015",
+                            "periodTo": "31.12.2015",
                             "include": true
                         }
                     ],
                     "salary": [
                         {
-                            "year": "2014",
+                            "year": "2015",
                             "sum": "250000",
                             "include": true
                         }
                     ],
                     "days": [
                         {
-                            "year": "2014",
-                            "periodFrom": "15.10.2014",
-                            "periodTo": "16.10.2014",
+                            "year": "2015",
+                            "periodFrom": "15.10.2015",
+                            "periodTo": "16.10.2015",
                             "amount": "2",
                             "name": "1-б/л.",
                             "include": true
@@ -1188,45 +1199,49 @@
             ],
             "ftn": [
                 {
-                    "base": "21000",
-                    "discount": "34000",
+                    "base": "21 000",
+                    "discount": "34 000",
                     "privilege": "0",
-                    "materialAssistance": "30000",
+                    "materialAssistance": "30 000",
                     "amount": "1"
                 }
             ],
             "fstn": [
                 {
                     "fund": "Соц. страх 2.9%",
-                    "base": "55000",
+                    "base": "55 000",
                     "disabledBase": "0",
-                    "discount": "34000",
+                    "discount": "34 000",
                     "deductions": "609",
                     "disabledDeductions": "0",
-                    "materialAssistance": "30000",
+                    "materialAssistance": "30 000",
                     "amount": "1"
                 },
                 {
                     "fund": "Фонд ОМС 5.1%",
-                    "base": "55000",
+                    "base": "55 000",
                     "disabledBase": "0",
-                    "discount": "34000",
-                    "deductions": "1071",
+                    "discount": "34 000",
+                    "deductions": "1 071",
                     "disabledDeductions": "0",
-                    "materialAssistance": "30000",
+                    "materialAssistance": "30 000",
                     "amount": "1"
                 },
                 {
                     "fund": "ПФ (страховая часть)",
-                    "base": "55000",
+                    "base": "55 000",
                     "disabledBase": "0",
-                    "discount": "34000",
-                    "deductions": "4620",
+                    "discount": "34 000",
+                    "deductions": "4 620",
                     "disabledDeductions": "0",
-                    "materialAssistance": "30000",
+                    "materialAssistance": "30 000",
                     "amount": "1"
                 }
-            ]
+            ],
+            "printForms":{
+              "settlementSlip": "Расчетный листок (2).xls",
+              "payslip": "Расчетная ведомость.xls"
+            }
         },
         {
             "lastName": "Парамонова",
@@ -1294,7 +1309,7 @@
             "personalAccount": {
                 "accountInfo": {
                     "personnelNumber": "",
-                    "receiptDate": "25.=.=",
+                    "receiptDate": "25.04.2018",
                     "orderNumber": "210-к",
                     "salaryAmount": "6052.00",
                     "workingHours": "",
@@ -1343,12 +1358,12 @@
                     "paymentMethod": "Банк",
                     "cardNumber": "4391680002330515",
                     "fullName": "",
-                    "validity": "08.+1",
+                    "validity": "0819",
                     "bankList": "",
                     "key": ""
                 },
                 "employeePrivileges": {
-                    "dateStart": "25.=.=",
+                    "dateStart": "25.04.2018",
                     "dateEnd": "",
                     "childPrivilege": true,
                     "renouncement": false,
@@ -1356,7 +1371,7 @@
                     "statementNumber": "8",
                     "singleParent": true,
                     "birthday": "17.08.2005",
-                    "statementDate": "25.=.=",
+                    "statementDate": "25.04.2018",
                     "disabled": true,
                     "taxDeduction": false,
                     "tutor": false,
@@ -1377,8 +1392,8 @@
                     "lastMonth": false,
                     "payroll": "27",
                     "order": "210-к",
-                    "date": "25.=.=",
-                    "dateFrom": "25.=.=",
+                    "date": "25.04.2018",
+                    "dateFrom": "25.04.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -1397,8 +1412,8 @@
                     "lastMonth": false,
                     "payroll": "77",
                     "order": "210-к",
-                    "date": "25.=.=",
-                    "dateFrom": "25.=.=",
+                    "date": "25.04.2018",
+                    "dateFrom": "25.04.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -1417,8 +1432,8 @@
                     "lastMonth": false,
                     "payroll": "4",
                     "order": "210-к",
-                    "date": "25.=.=",
-                    "dateFrom": "25.=.=",
+                    "date": "25.04.2018",
+                    "dateFrom": "25.04.2018",
                     "dateTo": "",
                     "payrollSum": "",
                     "averageIncomeSum": "",
@@ -1482,15 +1497,10 @@
             },
             "referencePreviousPlace": [
                 {
-                    "issueDate": "28.04.2016",
+                    "issueDate": "28.04.2017",
                     "referenceNumber": "1298",
                     "insurer": "Росатомнадзор",
                     "periods": [
-                        {
-                            "periodFrom": "01.01.2014",
-                            "periodTo": "31.12.2014",
-                            "include": true
-                        },
                         {
                             "periodFrom": "01.01.2015",
                             "periodTo": "31.12.2015",
@@ -1498,48 +1508,53 @@
                         },
                         {
                             "periodFrom": "01.01.2016",
-                            "periodTo": "28.04.2016",
+                            "periodTo": "31.12.2016",
+                            "include": true
+                        },
+                        {
+                            "periodFrom": "01.01.2017",
+                            "periodTo": "28.04.2017",
                             "include": true
                         }
                     ],
                     "salary": [
                         {
-                            "year": "2014",
+                            "year": "2015",
                             "sum": "350000",
                             "include": true
                         },
                         {
-                            "year": "2015",
+                            "year": "2016",
                             "sum": "395000",
                             "include": true
                         },
                         {
-                            "year": "2016",
+                            "year": "2017",
                             "sum": "72975",
                             "include": true
                         }
                     ],
                     "days": [
                         {
-                            "year": "2014",
-                            "periodFrom": "15.10.2014",
-                            "periodTo": "17.10.2014",
+                            "year": "2015",
+                            "periodFrom": "15.10.2015",
+                            "periodTo": "17.10.2015",
                             "amount": "3",
                             "name": "3-отп. по уходу",
                             "include": true
                         },
                         {
-                            "year": "2016",
-                            "periodFrom": "10.02.2016",
-                            "periodTo": "24.02.2016",
+                            "year": "2017",
+                            "periodFrom": "10.02.2017",
+                            "periodTo": "24.02.2017",
                             "amount": "15",
                             "name": "3-отп. по уходу",
                             "include": true
                         },
                         {
-                            "year": "2016",
-                            "periodFrom": "26.02.2016",
-                            "periodTo": "03.03.2016",
+                            "year": "2017",
+                            "periodFrom": "26.02.2017",
+                            "periodTo": "03.03.2017",
                             "amount": "7",
                             "name": "1-б/л.",
                             "include": true
@@ -1552,11 +1567,15 @@
                     "fullName": "Парамонова",
                     "reference": "Филиал № 78 ФГУ «ГБ МСЭ по г. Москве»",
                     "referenceNumber": "2693671 МСЭ-2007",
-                    "date": "01.=.=",
+                    "date": "01.04.2018",
                     "group": "II",
-                    "validity": "01.=.+2"
+                    "validity": "01.04.2020"
                 }
-            ]
+            ],
+            "printForms":{
+              "settlementSlip": "Расчетный листок (3).xls",
+              "payslip": "Расчетная ведомость.xls"
+            }
         }
   ]
 }

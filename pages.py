@@ -20,8 +20,8 @@ class LoginPage(BasePage):
     def lot(self, value):
         self.set_dropdown(LoginLocators.lot, value, "Участок")
 
-    # def date(self, value):
-    #     self.set_date(LoginLocators.date, value, "")
+    def date(self, value):
+        self.set_date(LoginLocators.date, value, "04.2018")
 
     def submit(self):
             self.click(LoginLocators.submit, "Войти")
@@ -40,7 +40,7 @@ class MainPage(BasePage):
         self.wait.loading()
 
     def logout(self):
-        self.click(MainLocators.logout, "Пикторграмма выхода")
+        self.click(MainLocators.logout, "Пиктограмма выхода")
         self.wait.element_appear(LoginLocators.username)
 
 
@@ -113,6 +113,7 @@ class EmployeeCardPage(BasePage):
     def save(self):
         self.click(EmployeeCardLocators.save, "Сохранить")
 
+
     def dialog_save(self):
         self.click(EmployeeCardLocators.dialog_save, "Сохранить")
 
@@ -142,7 +143,7 @@ class AccountInfoPage(BasePage):
         self.set_text(AccountInfoLocators.personnel_number, value, "Табельный номер")
 
     def receipt_date(self, value):
-        self.set_date(AccountInfoLocators.receipt_date, Date.get_date(value), "Дата приема")
+        self.set_date(AccountInfoLocators.receipt_date, value, "Дата приема")
 
     def order_number(self, value):
         self.set_text(AccountInfoLocators.order_number, value, "Номер приказа")
@@ -316,7 +317,7 @@ class CalcInfoPage(BasePage):
         self.set_text(CalcInfoLocators.full_name, value, "ФИО на латинице")
 
     def validity(self, value):
-        self.set_text(CalcInfoLocators.validity, Date.get_mmyy(value), "Срок действия")
+        self.set_text(CalcInfoLocators.validity, value, "Срок действия")
 
     def bank_list(self, value):
         self.set_text(CalcInfoLocators.bank_list, value, "Список (банк)")
@@ -362,7 +363,7 @@ class EmployeePrivilegesPage(BasePage):
         self.click(EmployeePrivilegesLocators.add, "Добавить")
 
     def date_start(self, value):
-        self.set_date(EmployeePrivilegesLocators.date_start, Date.get_date(value), "Начало действия")
+        self.set_date(EmployeePrivilegesLocators.date_start, value, "Начало действия")
 
     def date_end(self, value):
         self.set_date(EmployeePrivilegesLocators.date_end, value, "Конец действия")
@@ -390,7 +391,7 @@ class EmployeePrivilegesPage(BasePage):
     def statement_date(self, value):
         self.click(EmployeePrivilegesLocators.statement_date)
         self.wait.loading()
-        self.set_date(EmployeePrivilegesLocators.statement_date, Date.get_date(value), "Дата заявления")
+        self.set_date(EmployeePrivilegesLocators.statement_date, value, "Дата заявления")
 
     def disabled(self, value):
         self.set_checkbox(EmployeePrivilegesLocators.disabled, value, "Ребенок-инвалид")
@@ -462,13 +463,13 @@ class EmployeePrivilegesPage(BasePage):
 class WageIndexationPage(BasePage):
 
     def open(self):
-        self.select_tab("Сведения о лицевом счете")
+        self.click_by_name("Сведения о лицевом счете")
 
 
 class HistoryPage(BasePage):
 
     def open(self):
-        self.select_tab("Сведения о лицевом счете")
+        self.click_by_name("Сведения о лицевом счете")
 
 
 class DocumentsPage(BasePage):
@@ -663,6 +664,7 @@ class DisabledPage(BasePage):
 
     def add(self):
         self.click_by_name("Добавить")
+        sleep(5)
 
 
 class DisabledCardPage(BasePage):
@@ -679,13 +681,13 @@ class DisabledCardPage(BasePage):
         self.set_text(DisabledCardLocators.reference_number, value, "Номер справки")
 
     def date(self, value):
-        self.set_date(DisabledCardLocators.date, Date.get_date(value), "Дата выдачи")
+        self.set_date(DisabledCardLocators.date, value, "Дата выдачи")
 
     def group(self, value):
         self.set_text(DisabledCardLocators.group, value, "Группа инвалидности")
 
     def validity(self, value):
-        self.set_text(DisabledCardLocators.validity, Date.get_date(value), "Срок")
+        self.set_date(DisabledCardLocators.validity, value, "Срок")
 
 
 class FullNamePage(BasePage):
@@ -735,33 +737,33 @@ class PayrollWithholdingPage(BasePage):
         self.click(PayrollWithholdingLocators.withholding, "Удержание")
 
     def add_statement(self):
-        self.click(PayrollWithholdingLocators.addition_input)
+        self.click(PayrollWithholdingLocators.addition_input, "Дополнительный ввод")
         element = self.driver.find_element(By.XPATH, "//li[a='Запросы для б/л']")
         self.move_to_element(element)
         sleep(1)
         self.click(PayrollWithholdingLocators.members_statement)
 
     def add_pf_request(self):
-        self.click(PayrollWithholdingLocators.addition_input)
+        self.click(PayrollWithholdingLocators.addition_input, "Дополнительный ввод")
         element = self.driver.find_element(By.XPATH, "//li[a='Запросы для б/л']")
         self.move_to_element(element)
         sleep(1)
         self.click(PayrollWithholdingLocators.pf_request)
 
     def add_fss_request(self):
-        self.click(PayrollWithholdingLocators.addition_input)
+        self.click(PayrollWithholdingLocators.addition_input, "Дополнительный ввод")
         element = self.driver.find_element(By.XPATH, "//li[a='Запросы для б/л']")
         self.move_to_element(element)
         sleep(1)
         self.click(PayrollWithholdingLocators.fss_request)
 
     def add_ftn(self):
-        self.click(PayrollWithholdingLocators.data_funds)
-        self.click(PayrollWithholdingLocators.data_ftn)
+        self.click(PayrollWithholdingLocators.data_funds, "Данные о внеб.фондах")
+        self.click(PayrollWithholdingLocators.data_ftn, "Данные по облагаемой базе (FTN)")
 
     def add_fstn(self):
-        self.click(PayrollWithholdingLocators.data_funds)
-        self.click(PayrollWithholdingLocators.data_fstn)
+        self.click(PayrollWithholdingLocators.data_funds, "Данные о внеб.фондах")
+        self.click(PayrollWithholdingLocators.data_fstn, "Данные по отчислениям в фонды (FSTN)")
 
     def select_employee(self, value):
         self.search(value)
@@ -772,12 +774,22 @@ class PayrollWithholdingPage(BasePage):
         self.set_checkbox((By.XPATH, "//input[@type='checkbox']"), True)
 
     def add_income_certificate(self):
-        self.click(PayrollWithholdingLocators.addition_input)
-        self.click(PayrollWithholdingLocators.income_certificate)
+        self.click(PayrollWithholdingLocators.addition_input, "Дополнительный ввод")
+        self.click(PayrollWithholdingLocators.income_certificate, "Справка о доходах")
 
     def add_reference_previous_place(self):
-        self.click(PayrollWithholdingLocators.addition_input)
-        self.click(PayrollWithholdingLocators.reference_previous_place)
+        self.click(PayrollWithholdingLocators.addition_input, "Дополнительный ввод")
+        self.click(PayrollWithholdingLocators.reference_previous_place, "Справка для расчета б/л (ФСС)")
+
+    def print_settlement_sheet(self, value):
+        self.click(PayrollWithholdingLocators.employee_reports, "Отчеты по сотруднику")
+        self.click(PayrollWithholdingLocators.settlement_sheet, "Расчетный листок")
+        sleep(5)
+        self.click_by_name("Нет")
+        sleep(5)
+        self.click_by_name("Нет")
+        sleep(1)
+        File.compare_files(value)
 
 
 class PayrollCardPage(BasePage):
@@ -786,10 +798,10 @@ class PayrollCardPage(BasePage):
         self.set_text(PayrollCardLocators.order, value, "Приказ")
 
     def date(self, value):
-        self.set_date(PayrollCardLocators.date, Date.get_date(value), "Дата")
+        self.set_date(PayrollCardLocators.date, value, "Дата")
 
     def date_from(self, value):
-        self.set_date(PayrollCardLocators.date_from, Date.get_date(value), "Период с")
+        self.set_date(PayrollCardLocators.date_from, value, "Период с")
 
     def date_to(self, value):
         self.set_date(PayrollCardLocators.date_to, value, "Период по")
@@ -893,7 +905,7 @@ class StatementCardPage(BasePage):
         self.set_select(value, "Для оплаты")
 
     def statement_date(self, value):
-        self.set_date(StatementCardLocators.statement_date, Date.get_date(value), "Дата заявления")
+        self.set_date(StatementCardLocators.statement_date, value, "Дата заявления")
 
 
 class PFRequestCardPage(BasePage):
@@ -927,7 +939,7 @@ class PFRequestCardPage(BasePage):
         self.set_select(value, "Для оплаты")
 
     def request_date(self, value):
-        self.set_date(PFRequestCardLocators.request_date, Date.get_date(value), "Дата запроса")
+        self.set_date(PFRequestCardLocators.request_date, value, "Дата запроса")
 
     def request_number(self, value):
         self.set_text(PFRequestCardLocators.request_number, value, "Номер запроса")
@@ -1032,7 +1044,7 @@ class FSSRequestCardPage(BasePage):
         self.set_date(FSSRequestCardLocators.third_period_to, value, "Период работы по у третьего работодателя")
 
     def request_date(self, value):
-        self.set_date(FSSRequestCardLocators.request_date, Date.get_date(value), "Дата запроса")
+        self.set_date(FSSRequestCardLocators.request_date, value, "Дата запроса")
 
 
 class FTNPage(BasePage):
